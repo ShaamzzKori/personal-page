@@ -1,13 +1,15 @@
 body {
-  background: #fffffc;
-  width: 60vw;
+    margin: auto;
+    background: #fffffc;
+    width: 50vw;
+    margin-top: 0px;
 }  
 h1 {
-  font-style: italic;
-  font-size: 24px;
-  color: red;
-  position: flex;
-  margin-left, margin-right: auto;
+    font-style: italic;
+    font-size: 24px;
+    color: red;
+    text-align: right;
+    margin-top: 0px;
 }
 .short-desc {
   background: cyan;
