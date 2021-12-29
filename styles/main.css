@@ -1,11 +1,11 @@
 body {
-  background: blue;
+  background: #fffffc;
   width: 60vw;
 }  
 h1 {
   font-style: italic;
   font-size: 24px;
-  font-color: red;
+  color: red;
   position: flex;
   margin-left, margin-right: auto;
 }
@@ -14,5 +14,5 @@ h1 {
   shadow: 0 0 1 1;
   font-style: bold;
   font-size: 16px;
-  text-color: white;
+  color: white;
 }
