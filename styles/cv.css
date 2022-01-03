@@ -86,7 +86,7 @@ li {
     flex-wrap: nowrap;
     align-items: center;
 }
-.lang_text, .skill_text, .hobby_text, exp_text {
+.lang_text, .skill_text, .hobby_text, .exp_text {
     font-size: 16px
     color: darkgreen;
     padding-top: 10px;
