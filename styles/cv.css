@@ -1,43 +1,53 @@
 .all_CV {
+    margin: auto;
     width: 60vw;
     flex: auto;
     flex-direction: column;
 }
 .bio_1 {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 .photo {
-    flex-direction: row;
-    position: relative;
+}
+img {
+    width: 150px;
+    border-radius: 35px;
 }
 .fio {
+    padding: 3px;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 35px;
     font-style: oblique;
 }
 .gender, .reloc, .education, .drive  {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
 }
-.contacts {
+.contacts, a {
     text-decoration: none;
     font-size: 16px;
     font-family: italic;
 }
 .work_exp, .current, .n-1, .n-2, .n-3, .languages, .hobbies {
     flex-direction: column;
+    padding: 5px;
 }
 .dates, .lang_type {
-    font-style: italic, bold;
     color: blueviolet;
+    font-size: 19px;
+    text-shadow: 0px 0px 1px #8a2bd9;
 }
 .company {
-    font-size: 19px;
-    font-family: bold;
+    font-size: 25px;
+    font-family: cursive;
 }
 .job_name, .text {
-    font-family: monospace, italic;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: calibri;
 
 }
 .job_description {
@@ -45,9 +55,15 @@
 }
 li {
     list-style-type: square;
+    font-kerning: initial;
+    font: message-box;
 }
 .core_skills {
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .skill, .hobby {
     line-break: block;
@@ -55,6 +71,14 @@ li {
     font-size: 14px;
     font-family: bold;
 }
-footer {
+.hobbies_text {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
