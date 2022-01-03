@@ -91,10 +91,21 @@ li {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-style: italic;
-    font-size: 15px;
 }
 .skill, .hobby {
-
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.skill:hover, .hobby:hover {
+    
 }
 .lang {
     display: flex;
