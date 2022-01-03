@@ -93,20 +93,33 @@ li {
     font-style: italic;
 }
 .skill, .hobby {
-    background-color: #546e56;
+    background-color: #635700b8;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     margin: 4px 2px;
-    cursor: pointer;
+    cursor: default;
     border-radius: 16px;
+    transition-duration:0.3s;
 }
 .skill:hover, .hobby:hover {
-    
+    background-color: #000000;
+    border: 2px;
+    border-color:lemonchiffon;
+    color: #dcff00;
+    padding: 15px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: default;
+    border-radius: 16px;
+    transition-duration: 0.3s;
 }
 .lang {
     display: flex;
