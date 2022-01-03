@@ -93,7 +93,7 @@ li {
     font-style: italic;
 }
 .skill, .hobby {
-    background-color: grey;
+    background-color: #546e56;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -103,6 +103,7 @@ li {
     font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 16px;
 }
 .skill:hover, .hobby:hover {
     
@@ -122,8 +123,14 @@ li {
     justify-content: space-around;
 }
 footer {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
+    align-items: baseline;
+    height: fit-content;
+}
+.footer_left, .footer_right {
+    margin-bottom:0;
 }
