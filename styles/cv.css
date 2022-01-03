@@ -28,15 +28,18 @@ img {
     font-size: 15px;
 }
 .contacts {
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .contact, a {
     text-decoration: none;
-    font-size: 16px;
-    font-family: italic;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    color: #0f0bef;
+    padding: 2px;
 }
 .work_exp, .current, .n-1, .n-2, .n-3, .languages, .hobbies {
     flex-direction: column;
@@ -64,7 +67,7 @@ li {
     font-kerning: initial;
     font: message-box;
 }
-.core_skills {
+.core_skills, .hobbies_text {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -77,10 +80,17 @@ li {
     font-size: 14px;
     font-family: bold;
 }
-.hobbies_text {
+.lang {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.lang_text, .skill_text, .hobby_text, exp_text {
+    font-size: 16px
+    color: darkgreen;
+    padding-top: 10px;
+    text-alight: center;
 }
 footer {
     display: flex;
