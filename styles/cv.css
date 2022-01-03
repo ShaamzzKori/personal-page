@@ -1,0 +1,60 @@
+.all_CV {
+    width: 60vw;
+    flex: auto;
+    flex-direction: column;
+}
+.bio_1 {
+    position: absolute;
+}
+.photo {
+    flex-direction: row;
+    position: relative;
+}
+.fio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+.gender, .reloc, .education, .drive  {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.contacts {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: italic;
+}
+.work_exp, .current, .n-1, .n-2, .n-3, .languages, .hobbies {
+    flex-direction: column;
+}
+.dates, .lang_type {
+    font-style: italic, bold;
+    color: blueviolet;
+}
+.company {
+    font-size: 19px;
+    font-family: bold;
+}
+.job_name, .text {
+    font-family: monospace, italic;
+    font-size: 16px;
+
+}
+.job_description {
+    margin-left: 10px;
+}
+li {
+    list-style-type: square;
+}
+.core_skills {
+    flex-direction: row-reverse;
+}
+.skill, .hobby {
+    line-break: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-family: bold;
+}
+footer {
+    flex-direction: row;
+}
