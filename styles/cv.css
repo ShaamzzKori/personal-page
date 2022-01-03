@@ -147,3 +147,30 @@ footer {
 .footer_left, .footer_right {
     margin-bottom:0;
 }
+@media (max-width:4096px){
+	.all_CV {
+		max-width: 60vw;
+	}
+}
+@media (max-width:1200px){
+	.all_CV {
+		max-width: 70vw;
+        margin: 0;
+	}
+}
+@media (max-width:992px){
+	.all_CV {
+		max-width: 90vw;
+        margin: 0;
+	}
+}
+@media (max-width:767px){
+	.all_CV {
+		max-width: none;
+        margin: 0;
+	}
+}
+
+@media (min-width: 768px) {
+    
+}
