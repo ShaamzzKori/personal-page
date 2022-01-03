@@ -32,6 +32,7 @@ img {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-between;
+}
 .contact, a {
     text-decoration: none;
     font-size: 16px;
