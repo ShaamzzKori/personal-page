@@ -44,6 +44,7 @@ img {
 .work_exp, .current, .n-1, .n-2, .n-3, .languages, .hobbies {
     flex-direction: column;
     padding: 5px;
+    display:flex;
 }
 .dates, .lang_type {
     color: blueviolet;
@@ -70,15 +71,13 @@ li {
 .core_skills, .hobbies_text {
     display: flex;
     flex-direction: row;
-    align-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-style: italic;
+    font-size: 15px;
 }
 .skill, .hobby {
-    line-break: block;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-family: bold;
+
 }
 .lang {
     display: flex;
@@ -87,10 +86,12 @@ li {
     align-items: center;
 }
 .lang_text, .skill_text, .hobby_text, .exp_text {
-    font-size: 16px;
+    font-size: 28px;
     color: darkgreen;
     padding-top: 10px;
-    text-alight: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 footer {
     display: flex;
