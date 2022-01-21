@@ -117,34 +117,3 @@ a, a:hover, a:focus, a:active {
 .bottom-button-1:active {
   letter-spacing: 5px;
 }
-
-.bottom-button-1:after,
-.bottom-button-1:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: all 280ms ease-in-out;
-          transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.bottom-button-1:hover:after,
-.bottom-button-1:hover:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-color: #fff;
-  -webkit-transition: width 350ms ease-in-out;
-          transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.bottom-button-1:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
-}
