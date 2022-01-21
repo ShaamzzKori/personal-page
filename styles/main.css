@@ -4,6 +4,7 @@ body {
     height: 100vh;
     margin: 0px;
     display: flex;
+    flex-direction: column;
 }
 .all-page {
   display: flex;
@@ -94,14 +95,17 @@ body {
   border-radius: 5px;
 }
 footer {
-  margin-top: 3%;
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
   display: inline-flex;
-  align-items: stretch;
+  justify-content: space-between;
 }
 .footer-left, .footer-right {
   font-style: italic;
-  font-size: 1vh;
-  color: azure;
+  font-size: 2vh;
+  color: rgb(252, 8, 8);
+}
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #0423ff;
 }
