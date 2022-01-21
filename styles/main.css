@@ -31,6 +31,27 @@ body {
   box-shadow: 6px 4px 0px black;
   border-radius: 5px;
 }
+.upper-button-2 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
+.upper-button-3 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
+.upper-button-4 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
 .block-name {
   display: inline-flex;
   margin: 0%;
@@ -43,6 +64,34 @@ body {
 }
 .name {
   margin: auto;
+}
+.bottom-button-1 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
+.bottom-button-2 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
+.bottom-button-3 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
+}
+.bottom-button-4 {
+  background-color: beige;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
 }
 footer {
   margin-top: 3%;
