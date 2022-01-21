@@ -5,10 +5,20 @@ body {
     margin: 0px;
     display: flex;
 }
-.upper-buttons,.bottom-buttons {
+.all-page {
   display: flex;
+  width: 40vw;
   margin-left: auto;
   margin-right: auto;
+  height: 95vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.upper-buttons,.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 .upper-button-1,.upper-button-2, .upper-button-3,.upper-button-4,.bottom-button-1,.bottom-button-2, .bottom-button-3,.bottom-button-4{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,15 +26,23 @@ body {
 }
 .upper-button-1 {
   background-color: beige;
-  orientation: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  box-shadow: 6px 4px 0px black;
+  border-radius: 5px;
 }
 .block-name {
   display: inline-flex;
   margin: 0%;
-  padding: 1%;
   font-size: 10vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.name {
+  margin: auto;
 }
 footer {
   margin-top: 3%;
