@@ -31,50 +31,28 @@ body {
   margin-right: 2%;
   box-shadow: 6px 4px 0px black;
   border-radius: 5px;
-  transition-duration: .350ms;
+  transition-duration: 0.5s;
 }
 
 .block-name {
   display: inline-flex;
-  margin: 0%;
-  font-size: 10vh;
+  font-size: 9vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   flex-wrap: nowrap;
-  justify-content: center;
-  flex-direction: row;
+  text-align: center;
 }
 .name {
   margin: auto;
 }
-.bottom-button-1 {
+.bottom-button-1,.bottom-button-2,.bottom-button-3,.bottom-button-4 {
   background-color: beige;
   margin-left: 2%;
   margin-right: 2%;
   box-shadow: 6px 4px 0px black;
   border-radius: 5px;
   letter-spacing: 0;
-}
-.bottom-button-2 {
-  background-color: beige;
-  margin-left: 2%;
-  margin-right: 2%;
-  box-shadow: 6px 4px 0px black;
-  border-radius: 5px;
-}
-.bottom-button-3 {
-  background-color: beige;
-  margin-left: 2%;
-  margin-right: 2%;
-  box-shadow: 6px 4px 0px black;
-  border-radius: 5px;
-}
-.bottom-button-4 {
-  background-color: beige;
-  margin-left: 2%;
-  margin-right: 2%;
-  box-shadow: 6px 4px 0px black;
-  border-radius: 5px;
+  transition-duration: 0.8s;
 }
 footer {
   margin-left: 0.5%;
@@ -87,9 +65,9 @@ footer {
   font-size: 2vh;
   color: rgb(252, 8, 8);
 }
-a, a:hover, a:focus, a:active {
+a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
-  color: #0423ff;
+  color: inherit;
 }
 .bottom-button-1:hover,
 .bottom-button-1:active,
@@ -112,6 +90,20 @@ a, a:hover, a:focus, a:active {
   background-color: black;
   color: white;
   font-style: italic;
-  transform: rotate3d();
-  transition-duration: .350ms;
+}
+.bottom-button-1:hover,
+.bottom-button-2:hover,
+.bottom-button-3:hover,
+.bottom-button-4:hover,
+.upper-button-1:hover,
+.upper-button-2:hover,
+.upper-button-3:hover,
+.upper-button-4:hover {
+  letter-spacing: 5px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-style: italic;
+  transform: scaleY(360);
+  transition-duration: 0.8s;
 }
