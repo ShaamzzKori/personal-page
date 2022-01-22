@@ -68,27 +68,20 @@ a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
   color: inherit;
 }
-.bottom-button-1:hover,
 .bottom-button-1:active,
-.bottom-button-2:hover,
 .bottom-button-2:active,
-.bottom-button-3:hover,
 .bottom-button-3:active,
-.bottom-button-4:hover,
 .bottom-button-4:active,
-.upper-button-1:hover,
 .upper-button-1:active,
-.upper-button-2:hover,
 .upper-button-2:active,
-.upper-button-3:hover,
 .upper-button-3:active,
-.upper-button-4:hover,
 .upper-button-4:active {
-  letter-spacing: 5px;
   border-radius: 5px;
   background-color: black;
   color: white;
   font-style: italic;
+  letter-spacing: 5px;
+
 }
 .bottom-button-1:hover,
 .bottom-button-2:hover,
@@ -98,11 +91,12 @@ a, a:hover, a:focus, a:active, a:visited {
 .upper-button-2:hover,
 .upper-button-3:hover,
 .upper-button-4:hover {
-  letter-spacing: 5px;
+  /*letter-spacing: 5px;*/
   border-radius: 5px;
   background-color: black;
   color: white;
   font-style: italic;
-  transform: scaleY(360deg);
+  transform: rotate(360deg);
   transition-duration: 0.8s;
+  transition-delay: 0.1s;
 }
