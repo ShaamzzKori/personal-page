@@ -1,72 +1,72 @@
 body {
-    background: hsl(44deg 99% 49%);
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
+  background: hsl(0deg 0% 0%);
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 .all-page {
-  display: flex;
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
-  height: 95vh;
-  flex-direction: column;
-  justify-content: center;
+display: flex;
+width: 40vw;
+margin-left: auto;
+margin-right: auto;
+height: 95vh;
+flex-direction: column;
+justify-content: center;
 }
 .upper-buttons,.bottom-buttons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly;
 }
 .upper-button-1,.upper-button-2, .upper-button-3,.upper-button-4,.bottom-button-1,.bottom-button-2, .bottom-button-3,.bottom-button-4{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 3vh;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 3vh;
 }
 .upper-button-1,.upper-button-2,.upper-button-3,.upper-button-4 {
-  background-color: #f9b701;
-  margin: 3%;
-  box-shadow: 0px 0px 13px 3px black;
-  border-radius: 5px;
-  letter-spacing: 0;
-  transition-duration: 0.8s;
+background-color: #222;
+margin: 3%;
+box-shadow: 0px 0px 13px 3px #222;
+border-radius: 5px;
+letter-spacing: 0;
+transition-duration: 0.8s;
 }
 
 .block-name {
-  display: inline-flex;
-  font-size: 9vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  flex-wrap: nowrap;
-  text-align: center;
+display: flex;
+font-size: 9rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bold;
+text-align: center;
 }
 .name {
-  margin: auto;
+margin: auto;
+color:#0000c5a3
 }
 .bottom-button-1,.bottom-button-2,.bottom-button-3,.bottom-button-4 {
-  background-color: #f9b701;
-  margin: 3%;
-  box-shadow: 0px 0px 13px 3px black;
-  border-radius: 5px;
-  letter-spacing: 0;
-  transition-duration: 0.8s;
+background-color: #222;
+margin: 3%;
+box-shadow: 0px 0px 13px 3px #222;
+border-radius: 5px;
+letter-spacing: 0;
+transition-duration: 0.8s;
 }
 footer {
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  display: inline-flex;
-  justify-content: space-between;
+margin-left: 0.5%;
+margin-right: 0.5%;
+display: inline-flex;
+justify-content: space-between;
 }
 .footer-left, .footer-right {
-  font-style: italic;
-  font-size: 2vh;
-  color: rgb(252, 8, 8);
+font-style: italic;
+font-size: 2vh;
+color: rgb(61 69 3);
 }
 a, a:hover, a:focus, a:active, a:visited {
-  text-decoration: none;
-  color: inherit;
+text-decoration: none;
+color: inherit;
 }
 .bottom-button-1:active,
 .bottom-button-2:active,
@@ -76,11 +76,11 @@ a, a:hover, a:focus, a:active, a:visited {
 .upper-button-2:active,
 .upper-button-3:active,
 .upper-button-4:active {
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  font-style: italic;
-  letter-spacing: 5px;
+border-radius: 5px;
+background-color: black;
+color: white;
+font-style: italic;
+letter-spacing: 5px;
 
 }
 .bottom-button-1:hover,
@@ -91,11 +91,12 @@ a, a:hover, a:focus, a:active, a:visited {
 .upper-button-2:hover,
 .upper-button-3:hover,
 .upper-button-4:hover {
-  letter-spacing: 6px;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  font-style: italic;
-  transition-duration: 0.3s;
-  transition-delay: 0.1s;
+letter-spacing: 6px;
+border-radius: 5px;
+background-color: black;
+color: white;
+box-shadow: 0px 0px 13px 3px #00b8c7;
+font-style: italic;
+transition-duration: 0.3s;
+transition-delay: 0.1s;
 }
