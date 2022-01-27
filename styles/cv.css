@@ -173,5 +173,9 @@ footer {
 	width: 100vw;
         margin: 1%;
 	}
+	img:hover {
+    width: 300px;}
+    .bio_1 {
+    	margin-left:15px}
 }
 
