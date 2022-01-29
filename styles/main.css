@@ -5,6 +5,7 @@ body {
   margin: 0px;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 .all-page {
 display: flex;
