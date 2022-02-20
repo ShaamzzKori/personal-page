@@ -1,38 +1,23 @@
 body {
-  background: hsl(0deg 0% 0%);
+  background: rgb(14, 13, 13);
   width: 100vw;
   height: 100vh;
   margin: 0px;
   display: flex;
   flex-direction: column;
-  user-select: none;
+  
 }
-.all-page {
-display: flex;
-width: 40vw;
-margin-left: auto;
-margin-right: auto;
-height: 95vh;
-flex-direction: column;
-justify-content: center;
+.nav-menu {
+	
 }
-.upper-buttons,.bottom-buttons {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-evenly;
-}
-.upper-button-1,.upper-button-2, .upper-button-3,.upper-button-4,.bottom-button-1,.bottom-button-2, .bottom-button-3,.bottom-button-4{
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 3vh;
-}
-.upper-button-1,.upper-button-2,.upper-button-3,.upper-button-4 {
+.nav-item {
 background-color: #222;
-margin: 3%;
+margin: 0%;
 box-shadow: 0px 0px 13px 3px #222;
 border-radius: 5px;
 letter-spacing: 0;
 transition-duration: 0.8s;
+user-select: none;
 }
 
 .block-name {
@@ -42,17 +27,10 @@ font-size: 3em;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-weight: bold;
 text-align: center;
+user-select: none;
 color:#0000c5a3
 }
 
-.bottom-button-1,.bottom-button-2,.bottom-button-3,.bottom-button-4 {
-background-color: #222;
-margin: 3%;
-box-shadow: 0px 0px 13px 3px #222;
-border-radius: 5px;
-letter-spacing: 0;
-transition-duration: 0.8s;
-}
 footer {
 margin-left: 0.5%;
 margin-right: 0.5%;
@@ -68,14 +46,7 @@ a, a:hover, a:focus, a:active, a:visited {
 text-decoration: none;
 color: inherit;
 }
-.bottom-button-1:active,
-.bottom-button-2:active,
-.bottom-button-3:active,
-.bottom-button-4:active,
-.upper-button-1:active,
-.upper-button-2:active,
-.upper-button-3:active,
-.upper-button-4:active {
+.nav-item:active {
 border-radius: 5px;
 background-color: black;
 color: white;
@@ -83,14 +54,7 @@ font-style: italic;
 letter-spacing: 5px;
 
 }
-.bottom-button-1:hover,
-.bottom-button-2:hover,
-.bottom-button-3:hover,
-.bottom-button-4:hover,
-.upper-button-1:hover,
-.upper-button-2:hover,
-.upper-button-3:hover,
-.upper-button-4:hover {
+.nav-item:hover {
 letter-spacing: 6px;
 border-radius: 5px;
 background-color: black;
@@ -106,7 +70,7 @@ transition-delay: 0.1s;
 	margin:auto;
 	}
 }
-@media (max-width:1200px){
+@media (max-width:1400px){
 	.body {
 	width: 70vw;
         margin: auto;
