@@ -2,7 +2,8 @@ html {
 	max-width: 100%;
 }
 body {
-    background: rgb(14, 13, 13);
+    background-image: linear-gradient(rgb(9 9 181 / 78%), rgb(0 0 0));
+    /*background: rgb(14, 13, 13);*/
     height: 100vh;
     margin: 0px;
     display: flex;
