@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 html {
-    max-width: 100%;
-    min-width: 570px;
     display: flex;
     flex-direction: column;
 }
 body {
     background-image: linear-gradient(rgb(9 9 181 / 78%), rgba(0, 145, 145, 0.87));
-    background-repeat: no-repeat;
-    background-size:contain;
     height: 100vh;
     margin: 0px;
     display: flex;
