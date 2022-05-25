@@ -1,79 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
-
-* {
-    max-width: 1152px;
-    margin: auto;
-}
-header {
-    display: grid;
-}
-.header_list {
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Roboto&display=swap');
+/*
+font-family: 'Khand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {margin: 0%;}
+body {
     display: flex;
-    flex-direction: row;
-    justify-content: end; 
-    margin-right: 60px;
-
+    flex-direction: column;
 }
-.header_list_element {
-    list-style: none;
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29px;
+.profile_photo {
+    display: inline-block;
     text-align: right;
-    padding-left: 16px;
-    padding-right: 16px;
 }
-.about_me {
-    width: 856px;
-    margin: 142px 142px 0 142px;
+.photo, img {
+    max-width: 400px;
+    max-height: 400px;
+}
+.skill_name, .edu_header {
+    font-family: 'Khand', sans-serif;
+    font-size: 27px;
+}
+.skill_description, .edu_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.skill {
+    display: inline-flex;
+}
+.skill_item {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
-.container_hello {
-    max-width: 497px;
-}
-.pr_photo {
-    display: flex;
-    align-items: center;
-}
-.hello_hello {
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 60px;
-    color: #21243D;
-    padding-bottom: 67px;
-}
-.hello_more {
-    font-family: Heebo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    color:#21243D;
-    padding-bottom: 38px;
-}
-.hello_button {
-    background: #FF6464;
-    border-radius: 2px;
-    width: 208px;
-    height: 47px;
-    color:#fff;
-    font-family: Heebo;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 29px;
-border: none;
-}
-.about_me {
-    width: 856px;
+.skill_points {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+    flex-wrap: nowrap;
 }
+.education {display: block;}
+.edu_header {display: flex; flex-direction: column;}
+.edu_text {text-align: center;}
