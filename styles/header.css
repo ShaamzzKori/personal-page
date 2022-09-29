@@ -1,0 +1,97 @@
+.nav-menu {
+    margin: 65px 0 0 0;
+    padding-left: 100px;
+    background-color: rgba(194, 179, 148, 0.9);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 0px 0 0 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: 'Khand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 70px;
+    /* identical to box height, or 156% */
+    letter-spacing: 0.4em;
+}
+
+.nav-item:hover {
+    border: 1px black;
+    background-color: rgba(173, 143, 83, 0.9);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.lang_change {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+    font-family: 'Khand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.3em;
+}
+
+#ru.active,
+#en.active {
+    background-blend-mode: lighten;
+    padding-left: 5px;
+    border-radius: 5px;
+    display: flex;
+}
+
+#ru {
+    text-align: center;
+    display: none;
+    border-radius: 50%;
+}
+
+#ru:hover {
+    background-blend-mode: lighten;
+    background-color: rgba(173, 143, 83, 0.9);
+    /*background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 30%, #0000ff 33%, #0000ff 60%, #ff0000 66%);*/
+}
+
+#en {
+    text-align: center;
+    display: none;
+}
+
+#en:hover {
+    background-size: inherit;
+    background-color: rgba(173, 143, 83, 0.9);
+    background-image: url(../img/usflag.webp);
+}
+
+.button-1 {
+    font-family: Khand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 70px;
+    /* identical to box height, or 140% */
+    letter-spacing: 0.54em;
+    color: #000000;
+    padding-left: 3px;
+}

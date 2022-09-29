@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0%;
+    background-color: #E7E7E9;
+}
+
+.content_all {
+    min-height: 100vh;
+    background-image: url(../img/bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content__container {
+    padding: 0% 0 0 0%;
+    margin: 10% auto 5% auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.me {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 0.395em;
+    text-transform: uppercase;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+.quote {
+    bottom: -720px;
+    right: 15px;
+    padding: 0px;
+    position: relative;
+    font-family: 'Khand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    color: #BDB4B4;
+    text-align: right;
+    height: fit-content;
+}
