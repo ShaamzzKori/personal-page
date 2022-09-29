@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&family=Roboto&display=swap');
+/*
+font-family: 'Khand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+* {margin: 0%;}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.profile_photo {
+    display: inline-block;
+    text-align: right;
+}
+.photo, img {
+    max-width: 400px;
+    max-height: 400px;
+}
+.skill_name, .edu_header {
+    font-family: 'Khand', sans-serif;
+    font-size: 27px;
+}
+.skill_description, .edu_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+.skill {
+    display: inline-flex;
+}
+.skill_item {
+    display: flex;
+    flex-direction: row;
+}
+.skill_points {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.education {display: block;}
+.edu_header {display: flex; flex-direction: column;}
+.edu_text {text-align: center;}
