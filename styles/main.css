@@ -53,3 +53,20 @@ body {
     text-align: right;
     height: fit-content;
 }
+@media only screen and (max-width: 768px){
+    .content__container {
+        padding: 0% 0 0 0%;
+        margin: 3% auto 3% auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .me {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        letter-spacing: 0.395em;
+        text-transform: uppercase;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+}
