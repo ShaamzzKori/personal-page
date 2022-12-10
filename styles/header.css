@@ -1,5 +1,5 @@
 .nav-menu {
-    margin: 5px 0 0 0;
+    margin: 0px 0 0 0;
     padding-left: 10px;
     background-color: rgba(194, 179, 148, 0.9);
     backdrop-filter: blur(4px);
@@ -10,7 +10,6 @@
     align-items: center;
     user-select: none;
 }
-
 
 a,
 a:hover,
@@ -96,7 +95,8 @@ a:active {
     color: #000000;
     padding-left: 3px;
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
     .nav-menu {
         margin: 5px 0 0 0;
         padding-left: 1px;
@@ -105,7 +105,6 @@ a:active {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    
     }
     .nav-item {
         padding: 0px 0 0 0px;
@@ -118,5 +117,4 @@ a:active {
         letter-spacing: 0.4em;
         line-height: 10px;
     }
-    } 
-    
+}

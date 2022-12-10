@@ -4,6 +4,9 @@ h3,
 h4,
 h5,
 h6,
+
+/* CSS for start-start page */
+
 ul {
     margin: 0;
     padding: 0;
@@ -53,7 +56,57 @@ body {
     text-align: right;
     height: fit-content;
 }
-@media only screen and (max-width: 768px){
+
+
+/* CSS for project page */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    width: 49vw;
+    margin: 1% 0px 1% 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p_name {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
+.p_description {
+    font-size: 1.1rem;
+    font-family: Quicksand;
+    font-weight: 400;
+    padding-left: 2%;
+}
+
+.p_image {
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 768px) {
     .content__container {
         padding: 0% 0 0 0%;
         margin: 3% auto 3% auto;
@@ -68,5 +121,8 @@ body {
         letter-spacing: 0.395em;
         text-transform: uppercase;
         font-feature-settings: 'tnum' on, 'lnum' on;
+    }
+    .project {
+        width: auto;
     }
 }

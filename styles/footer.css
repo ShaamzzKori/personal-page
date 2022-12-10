@@ -1,0 +1,16 @@
+footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    height: fit-content;
+    user-select: none;
+    background-color: rgba(194, 179, 148, 0.9);
+}
+
+.footer_left,
+.footer_right {
+    margin-bottom: 0;
+}
