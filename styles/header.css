@@ -21,11 +21,10 @@ a:active {
 .nav-item {
     padding: 0px 0 0 0px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.9s;
     font-family: 'Khand';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
     line-height: 70px;
     /* identical to box height, or 156% */
     letter-spacing: 0.4em;
@@ -35,8 +34,9 @@ a:active {
     border: 1px black;
     background-color: rgba(173, 143, 83, 0.9);
     border-radius: 10px;
-    transition: 0.5s;
-}
+    transition: 0.9s;
+    
+    }
 
 .lang_change {
     display: flex;
@@ -88,7 +88,7 @@ a:active {
     font-family: Khand;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 1.6rem;
     line-height: 70px;
     /* identical to box height, or 140% */
     letter-spacing: 0.54em;

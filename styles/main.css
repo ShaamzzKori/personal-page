@@ -22,6 +22,7 @@ body {
     background-image: url(../img/bg.webp);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .content__container {
@@ -35,10 +36,10 @@ body {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
-    font-size: 70px;
+    font-size: 4.375rem;
     line-height: 70px;
     letter-spacing: 0.395em;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
@@ -50,7 +51,7 @@ body {
     font-family: 'Khand';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 0.3em;
     color: #BDB4B4;
     text-align: right;
@@ -117,7 +118,7 @@ section {
         font-family: 'Quicksand';
         font-style: normal;
         font-weight: 600;
-        font-size: 4rem;
+        font-size: 3.5rem;
         letter-spacing: 0.395em;
         text-transform: uppercase;
         font-feature-settings: 'tnum' on, 'lnum' on;
