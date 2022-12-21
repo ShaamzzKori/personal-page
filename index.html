@@ -12,6 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        function pcsh1() {
+    var x = document.getElementById("ru");
+    if (x.classList.contains("none")) {
+      x.classList.remove("none");
+    } else {
+      x.classList.add("block");
+    }
+}
+    </script>
     <style>
         html {
             background-image: url(./img/bg.webp);
@@ -34,9 +44,9 @@
             display: flex;
             justify-items: center;
             padding: 10%;
-            align-items: center;
-            flex-direction: row;
             justify-content: space-between;
+            flex-direction: row;
+            align-content: space-between;
         }
         
         div.russian {
@@ -48,7 +58,7 @@
         div.russian:hover {
             font-style: oblique;
             font-size: 2rem;
-            background-color: blanchedalmond;
+            background-color: rgb(70 41 41);
             transition: 500ms;
             transition-delay: 50ms;
             transition-duration: 500ms;
@@ -103,10 +113,49 @@
         .footer_right a {
             color: blanchedalmond;
         }
+        @media only screen and (max-width: 768px) and (orientation: portrait) {
+            
+            div.greetings {
+                margin-top: 10%;
+                display: block;
+                text-align: center;
+            }
+            div.buttons {
+                flex-direction:column;
+                color: antiquewhite;
+                padding-top: 11vh;
+                padding-bottom: 11vh;
+            }
+            div.button{
+                margin-top: 10%;
+                margin-bottom: 15%;
+            }
+            a, a:active, a:visited, a:hover {
+                color: cadetblue;
+            }
+            a:hover {
+                color: antiquewhite;
+                background-color: #272727;
+            }
+            div.russian:hover {
+                background-color: rgb(70 41 41);
+            }
+            div.english:hover { background-color:rgb(64, 70, 41)}
+            html {
+                background-image: none;
+                background-color: #252525;
+            }
+            footer, .footer_right>a {
+                color: #646363;
+                align-items: flex-end;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="greetings en none" id="en">Welcome to shaamzzkori.tk! <br><span>please, choose language for continue</span></div>
+    <div class="greetings ru block" id="ru" style="display: none;">Добро пожаловать на shaamzzkori.tk! <br><span>пожалуйста, выберите язык для продолжения</span></div>
     <div class="buttons">
         <div class="russian button">
             <a href="./ru-RU/index.html">Открыть сайт на Русском</a>

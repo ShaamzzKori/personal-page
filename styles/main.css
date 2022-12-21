@@ -39,7 +39,7 @@ body {
     font-size: 4.375rem;
     line-height: 70px;
     letter-spacing: 0.395em;
-    /*text-transform: uppercase;*/
+    /*text-transform: uppercase;*/ 
     font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
@@ -107,7 +107,7 @@ section {
 
 /* media queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     .content__container {
         padding: 0% 0 0 0%;
         margin: 3% auto 3% auto;
