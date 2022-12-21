@@ -39,7 +39,7 @@ body {
     font-size: 4.375rem;
     line-height: 70px;
     letter-spacing: 0.395em;
-    /*text-transform: uppercase;*/ 
+    /*text-transform: uppercase;*/
     font-feature-settings: 'tnum' on, 'lnum' on;
 }
 
@@ -118,10 +118,11 @@ section {
         font-family: 'Quicksand';
         font-style: normal;
         font-weight: 600;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         letter-spacing: 0.395em;
         text-transform: uppercase;
         font-feature-settings: 'tnum' on, 'lnum' on;
+        opacity: 80%;
     }
     .project {
         width: auto;

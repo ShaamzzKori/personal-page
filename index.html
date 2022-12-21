@@ -13,29 +13,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
-        function pcsh1() {
-    var x = document.getElementById("ru");
-    if (x.classList.contains("none")) {
-      x.classList.remove("none");
-    } else {
-      x.classList.add("block");
-    }
-}
     </script>
     <style>
+        span::before {
+            content: "Welcome to shaamzzkori.tk!"" please, choose language for continue";
+            animation: animate infinite linear 9s;
+        }
+        
+        @keyframes animate {
+            10% {
+                content: "Добро to shaamzzkori.tk!"" please, choose language for continue"
+            }
+            20% {
+                content: "Добро пожаловать to shaamzzkori.tk! please, choose language for continue"
+            }
+            30% {
+                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
+            }
+            40% {
+                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
+            }
+            50% {
+                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
+            }
+            60% {
+                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, choose language for continue"
+            }
+            70% {
+                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите language for continue"
+            }
+            80% {
+                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык for continue"
+            }
+            90% {
+                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык для continue"
+            }
+            100% {
+                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык для продолжения"
+            }
+        }
+        
         html {
             background-image: url(./img/bg.webp);
             max-height: 100vh;
             min-width: 100vw;
-            background-size:cover;
+            /* background-size: cover; */
             background-repeat: no-repeat;
             font-family: 'calibri';
             font-size: calc(2.10vh);
             color: blueviolet;
         }
+        
         .button {
-    font-size: 1.5rem;
-}
+            font-size: 1.5rem;
+        }
+        
+        .greetings {
+            text-align: center;
+        }
+        
         body {}
         
         div.buttons {
@@ -58,7 +94,7 @@
         div.russian:hover {
             font-style: oblique;
             font-size: 2rem;
-            background-color: rgb(70 41 41);
+            background-color: blanchedalmond;
             transition: 500ms;
             transition-delay: 50ms;
             transition-duration: 500ms;
@@ -113,24 +149,27 @@
         .footer_right a {
             color: blanchedalmond;
         }
+        
         @media only screen and (max-width: 768px) and (orientation: portrait) {
-            
             div.greetings {
                 margin-top: 10%;
                 display: block;
                 text-align: center;
             }
             div.buttons {
-                flex-direction:column;
+                flex-direction: column;
                 color: antiquewhite;
                 padding-top: 11vh;
                 padding-bottom: 11vh;
             }
-            div.button{
+            div.button {
                 margin-top: 10%;
                 margin-bottom: 15%;
             }
-            a, a:active, a:visited, a:hover {
+            a,
+            a:active,
+            a:visited,
+            a:hover {
                 color: cadetblue;
             }
             a:hover {
@@ -140,12 +179,15 @@
             div.russian:hover {
                 background-color: rgb(70 41 41);
             }
-            div.english:hover { background-color:rgb(64, 70, 41)}
+            div.english:hover {
+                background-color: rgb(64, 70, 41)
+            }
             html {
                 background-image: none;
                 background-color: #252525;
             }
-            footer, .footer_right>a {
+            footer,
+            .footer_right>a {
                 color: #646363;
                 align-items: flex-end;
             }
@@ -154,8 +196,7 @@
 </head>
 
 <body>
-    <div class="greetings en none" id="en">Welcome to shaamzzkori.tk! <br><span>please, choose language for continue</span></div>
-    <div class="greetings ru block" id="ru" style="display: none;">Добро пожаловать на shaamzzkori.tk! <br><span>пожалуйста, выберите язык для продолжения</span></div>
+    <div class="greetings"><span></span></div>
     <div class="buttons">
         <div class="russian button">
             <a href="./ru-RU/index.html">Открыть сайт на Русском</a>
