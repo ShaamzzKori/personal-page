@@ -103,7 +103,23 @@ section {
     display: flex;
     justify-content: space-between;
 }
+.click-zoom input[type=checkbox] {
+  display: none
+}
 
+.click-zoom img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+  transform: scale(3);
+  cursor: zoom-out;
+  width: auto;
+  position: center;
+}
 
 /* media queries */
 
