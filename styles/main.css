@@ -3,33 +3,42 @@
    Stack unchanged: plain HTML + CSS + vanilla JS.
    ========================================================================== */
 
-/* ---------- tokens -------------------------------------------------------- */
+/* ---------- tokens --------------------------------------------------------
+   Палитра задана парами light-dark(<светлое>, <тёмное>). Что применится,
+   решает used color-scheme на :root: системная настройка по умолчанию,
+   либо data-theme="light|dark" от переключателя в шапке.
+   Контраст пар посчитан по WCAG: текст >= 4.5:1, крупный текст и UI >= 3:1.
+   ------------------------------------------------------------------------ */
 
 :root {
-    --paper: #FBF8F3;
-    --paper-2: #F4EFE7;
-    --surface: #FFFFFF;
+    color-scheme: light dark;
 
-    --ink: #1B1815;
-    --ink-2: #4C463F;
-    --ink-3: #6B645B;
+    --paper: light-dark(#FBF8F3, #131110);
+    --paper-2: light-dark(#F4EFE7, #1A1715);
+    --surface: light-dark(#FFFFFF, #201C19);
 
-    --line: #E6DFD4;
-    --line-strong: #CFC5B6;
+    --ink: light-dark(#1B1815, #F2ECE3);
+    --ink-2: light-dark(#4C463F, #C7BFB2);
+    --ink-3: light-dark(#6B645B, #A9A296);
 
-    --accent: #A9551F;
-    --accent-strong: #8A4416;
-    --accent-soft: #F7EADF;
-    --accent-line: #EED9C6;
+    --line: light-dark(#E6DFD4, #2C2823);
+    --line-strong: light-dark(#CFC5B6, #453F37);
 
-    --btn-hover: #000000;
-    --btn-accent-fg: #FFF9F4;
-    --bar-off: #DBD2C4;
-    --header-bg: rgba(251, 248, 243, .82);
+    --accent: light-dark(#A9551F, #E2904F);
+    --accent-strong: light-dark(#8A4416, #F0A96C);
+    --accent-soft: light-dark(#F7EADF, #2B221B);
+    --accent-line: light-dark(#EED9C6, #47372A);
 
-    --shadow-sm: 0 1px 2px rgba(27, 24, 21, .05), 0 1px 1px rgba(27, 24, 21, .04);
-    --shadow-md: 0 20px 45px -28px rgba(27, 24, 21, .45), 0 2px 8px rgba(27, 24, 21, .05);
-    --shadow-lg: 0 40px 80px -40px rgba(27, 24, 21, .55);
+    --btn-hover: light-dark(#000000, #FFFDF9);
+    --btn-accent-fg: light-dark(#FFF9F4, #1A1208);
+    --bar-off: light-dark(#DBD2C4, #4F4739);
+    --header-bg: light-dark(rgba(251, 248, 243, .82), rgba(19, 17, 16, .82));
+
+    --shadow-sm: 0 1px 2px light-dark(rgba(27, 24, 21, .05), rgba(0, 0, 0, .5)),
+        0 1px 1px light-dark(rgba(27, 24, 21, .04), rgba(0, 0, 0, .4));
+    --shadow-md: 0 20px 45px -28px light-dark(rgba(27, 24, 21, .45), rgba(0, 0, 0, .8)),
+        0 2px 8px light-dark(rgba(27, 24, 21, .05), rgba(0, 0, 0, .4));
+    --shadow-lg: 0 40px 80px -40px light-dark(rgba(27, 24, 21, .55), rgba(0, 0, 0, .9));
 
     --r-sm: 10px;
     --r-md: 16px;
@@ -44,54 +53,62 @@
 
     --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
     --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
 
+/* ручной выбор темы перекрывает системный */
+:root[data-theme="light"] {
     color-scheme: light;
 }
 
-/* ---------- dark theme ----------------------------------------------------
-   Auto-switch by system preference. Every pair below is verified for
-   WCAG AA: body text >= 4.5:1, large text / UI >= 3:1.
-   ------------------------------------------------------------------------ */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+/* фото чуть притушены в тёмной теме */
+:root[data-theme="dark"] .hero-figure__frame img,
+:root[data-theme="dark"] .cv-photo img,
+:root[data-theme="dark"] .about-portrait img {
+    filter: saturate(1.02) brightness(.94);
+}
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --paper: #131110;
-        --paper-2: #1A1715;
-        --surface: #201C19;
-
-        --ink: #F2ECE3;
-        --ink-2: #C7BFB2;
-        --ink-3: #A9A296;
-
-        --line: #2C2823;
-        --line-strong: #453F37;
-
-        --accent: #E2904F;
-        --accent-strong: #F0A96C;
-        --accent-soft: #2B221B;
-        --accent-line: #47372A;
-
-        --btn-hover: #FFFDF9;
-        --btn-accent-fg: #1A1208;
-        --bar-off: #4F4739;
-        --header-bg: rgba(19, 17, 16, .82);
-
-        --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
-        --shadow-md: 0 20px 45px -28px rgba(0, 0, 0, .8), 0 2px 8px rgba(0, 0, 0, .4);
-        --shadow-lg: 0 40px 80px -40px rgba(0, 0, 0, .9);
-
-        color-scheme: dark;
-    }
-
-    .hero-figure__frame img,
-    .cv-photo img,
-    .about-portrait img {
+    :root:not([data-theme="light"]) .hero-figure__frame img,
+    :root:not([data-theme="light"]) .cv-photo img,
+    :root:not([data-theme="light"]) .about-portrait img {
         filter: saturate(1.02) brightness(.94);
     }
+}
 
-    .strip,
-    .lang-visual {
-        background-color: #0E0C0A;
+/* Старые браузеры без light-dark(): остаётся светлая тема.
+   Значения — снимок светлой палитры выше, править их не нужно. */
+@supports not (color: light-dark(#fff, #000)) {
+    :root {
+        color-scheme: light;
+
+        --paper: #FBF8F3;
+        --paper-2: #F4EFE7;
+        --surface: #FFFFFF;
+
+        --ink: #1B1815;
+        --ink-2: #4C463F;
+        --ink-3: #6B645B;
+
+        --line: #E6DFD4;
+        --line-strong: #CFC5B6;
+
+        --accent: #A9551F;
+        --accent-strong: #8A4416;
+        --accent-soft: #F7EADF;
+        --accent-line: #EED9C6;
+
+        --btn-hover: #000000;
+        --btn-accent-fg: #FFF9F4;
+        --bar-off: #DBD2C4;
+        --header-bg: rgba(251, 248, 243, .82);
+
+        --shadow-sm: 0 1px 2px rgba(27, 24, 21, .05), 0 1px 1px rgba(27, 24, 21, .04);
+        --shadow-md: 0 20px 45px -28px rgba(27, 24, 21, .45), 0 2px 8px rgba(27, 24, 21, .05);
+        --shadow-lg: 0 40px 80px -40px rgba(27, 24, 21, .55);
     }
 }
 
@@ -571,6 +588,68 @@ code {
 .skip-link:focus {
     top: 14px;
     color: var(--paper);
+}
+
+/* ---------- theme switch (базовые стили: нужны и вне шапки) --------------- */
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    height: 36px;
+    padding: 0 .6rem;
+    border: 1px solid light-dark(#E6DFD4, #3B342C);
+    border-radius: var(--r-pill);
+    background-color: var(--surface);
+    color: var(--ink-2);
+    font-family: inherit;
+    font-size: .78rem;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: color .2s var(--ease), border-color .2s var(--ease),
+        background-color .2s var(--ease);
+}
+
+.theme-toggle:hover {
+    color: var(--ink);
+    border-color: var(--line-strong);
+    background-color: var(--surface);
+}
+
+.theme-toggle:active {
+    transform: translateY(1px);
+}
+
+.theme-toggle svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.theme-icon {
+    display: none;
+}
+
+.theme-icon .theme-half {
+    fill: currentColor;
+    stroke: none;
+}
+
+:root:not([data-theme]) .theme-icon--auto,
+:root[data-theme="light"] .theme-icon--light,
+:root[data-theme="dark"] .theme-icon--dark {
+    display: block;
+}
+
+.theme-toggle__label {
+    display: none;
 }
 
 /* ---------- footer -------------------------------------------------------- */

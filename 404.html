@@ -9,6 +9,17 @@
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#131110" media="(prefers-color-scheme: dark)">
+    <script>
+        /* тема применяется до первой отрисовки — без вспышки */
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'light' || t === 'dark') {
+                    document.documentElement.dataset.theme = t;
+                }
+            } catch (e) { }
+        })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" href="img/favicons/appicon.ico" sizes="any">
@@ -40,6 +51,20 @@
                     <li><a href="ru-RU/index.html">Русская версия</a></li>
                     <li><a href="en-US/index.html" hreflang="en">English version</a></li>
                 </ul>
+                <button class="theme-toggle" type="button" data-theme-toggle aria-label="Тема оформления: системная" title="Тема оформления: системная">
+                    <svg class="theme-icon theme-icon--auto" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="8.5"></circle>
+                        <path class="theme-half" d="M12 3.5a8.5 8.5 0 0 1 0 17z"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon--light" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2.6v2.1M12 19.3v2.1M2.6 12h2.1M19.3 12h2.1M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5"></path>
+                    </svg>
+                    <svg class="theme-icon theme-icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"></path>
+                    </svg>
+                    <span class="theme-toggle__label">Системная</span>
+                </button>
             </nav>
         </div>
     </header>

@@ -57,14 +57,9 @@
     /* ---------- 2. reveal on scroll --------------------------------------- */
 
     var items = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
-
-    if (!items.length) {
-        return;
-    }
-
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (reduceMotion || !('IntersectionObserver' in window)) {
+    if (!items.length || reduceMotion || !('IntersectionObserver' in window)) {
         items.forEach(function (el) {
             el.classList.add('is-visible');
         });
@@ -125,5 +120,113 @@
             (now.getMonth() === born.getMonth() && now.getDate() < born.getDate());
 
         ageTarget.textContent = String(beforeBirthday ? age - 1 : age);
+    }
+
+    /* ---------- 6. theme switch: light / dark / system -------------------- */
+
+    var root = document.documentElement;
+    var themeBtn = document.querySelector('[data-theme-toggle]');
+    var THEME_KEY = 'theme';
+    var MODES = ['light', 'dark', 'auto'];
+    var isRu = (root.lang || '').toLowerCase().indexOf('ru') === 0;
+
+    var TEXT = isRu ? {
+        light: 'Светлая',
+        dark: 'Тёмная',
+        auto: 'Системная',
+        label: 'Тема оформления',
+        next: 'Далее:',
+        prefix: 'Тема:'
+    } : {
+        light: 'Light',
+        dark: 'Dark',
+        auto: 'System',
+        label: 'Colour theme',
+        next: 'Next:',
+        prefix: 'Theme:'
+    };
+
+    var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function readMode() {
+        try {
+            var stored = localStorage.getItem(THEME_KEY);
+            if (stored === 'light' || stored === 'dark') {
+                return stored;
+            }
+        } catch (e) { /* приватный режим, storage недоступен */ }
+
+        return 'auto';
+    }
+
+    function modeLabel(mode) {
+        if (mode === 'auto') {
+            return TEXT.auto + ' (' + (darkQuery.matches ? TEXT.dark : TEXT.light).toLowerCase() + ')';
+        }
+
+        return TEXT[mode];
+    }
+
+    function paintButton(mode) {
+        if (!themeBtn) {
+            return;
+        }
+
+        var label = themeBtn.querySelector('.theme-toggle__label');
+        var text = modeLabel(mode);
+        var next = modeLabel(MODES[(MODES.indexOf(mode) + 1) % MODES.length]);
+        var description = TEXT.label + ': ' + text + '. ' + TEXT.next + ' ' + next;
+
+        if (label) {
+            label.textContent = TEXT.prefix + ' ' + text;
+        }
+
+        themeBtn.setAttribute('title', description);
+        themeBtn.setAttribute('aria-label', description);
+        themeBtn.setAttribute('data-mode', mode);
+    }
+
+    function applyMode(mode) {
+        if (mode === 'auto') {
+            root.removeAttribute('data-theme');
+        } else {
+            root.setAttribute('data-theme', mode);
+        }
+
+        paintButton(mode);
+    }
+
+    if (themeBtn) {
+        paintButton(readMode());
+
+        themeBtn.addEventListener('click', function () {
+            var next = MODES[(MODES.indexOf(readMode()) + 1) % MODES.length];
+
+            try {
+                localStorage.setItem(THEME_KEY, next);
+            } catch (e) { /* игнорируем: тема просто не запомнится */ }
+
+            applyMode(next);
+        });
+
+        /* системная тема переключилась, пока выбран режим «системная» */
+        var onSystemChange = function () {
+            if (readMode() === 'auto') {
+                paintButton('auto');
+            }
+        };
+
+        if (typeof darkQuery.addEventListener === 'function') {
+            darkQuery.addEventListener('change', onSystemChange);
+        } else if (typeof darkQuery.addListener === 'function') {
+            darkQuery.addListener(onSystemChange);
+        }
+
+        /* смена темы в другой вкладке */
+        window.addEventListener('storage', function (event) {
+            if (event.key === THEME_KEY) {
+                applyMode(readMode());
+            }
+        });
     }
 })();

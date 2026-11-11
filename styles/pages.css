@@ -557,10 +557,17 @@
 }
 
 .lang-panel {
+    position: relative;
     display: flex;
     align-items: center;
     padding-block: clamp(40px, 8vh, 92px);
     background-color: var(--paper);
+}
+
+.theme-toggle--floating {
+    position: absolute;
+    top: clamp(18px, 3vw, 28px);
+    right: clamp(18px, 3vw, 28px);
 }
 
 .lang-content {
