@@ -393,15 +393,15 @@
 @media print {
     @page {
         size: A4;
-        margin: 12mm 12mm;
+        margin: 10mm 11mm;
     }
 
     html,
     body {
         background: #fff !important;
         color: #000;
-        font-size: 10pt;
-        line-height: 1.45;
+        font-size: 9.5pt;
+        line-height: 1.36;
     }
 
     /* печать всегда светлая, даже если система в тёмной теме */
@@ -448,7 +448,7 @@
     }
 
     .cv-sheet {
-        grid-template-columns: 62mm 1fr;
+        display: block;
         max-width: none;
         border: 0;
         border-radius: 0;
@@ -456,21 +456,49 @@
         overflow: visible;
     }
 
+    /* в печати сайдбар становится компактной шапкой: фото слева, факты справа,
+       дальше опыт идёт обычным потоком и переносится по страницам без разрывов */
     .cv-side {
-        padding: 0 6mm 0 0;
+        display: grid;
+        grid-template-columns: 32mm minmax(0, 1fr);
+        column-gap: 6mm;
+        align-items: start;
+        padding: 0 0 4mm;
         background: none;
-        border-right: 1px solid #ddd;
-        gap: 1.1rem;
-    }
-
-    .cv-main {
-        padding: 0 0 0 6mm;
+        border: 0;
+        border-bottom: 1px solid #ccc;
     }
 
     .cv-photo {
-        width: 32mm;
-        height: 32mm;
+        width: 30mm;
+        height: 30mm;
         border-width: 0;
+        grid-row: 1 / span 4;
+    }
+
+    .cv-side > section {
+        grid-column: 2;
+    }
+
+    .cv-side-title {
+        margin-bottom: .45em;
+        padding-bottom: .25em;
+        font-size: 8pt;
+    }
+
+    .cv-side .chip-list {
+        gap: 0 1.2mm;
+    }
+
+    .cv-langs {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: .4em 6mm;
+        font-size: 8.5pt;
+    }
+
+    .cv-main {
+        padding: 4mm 0 0;
     }
 
     .cv-name {
@@ -478,16 +506,32 @@
     }
 
     .cv-section {
-        padding-top: 5mm;
+        padding-top: 3.5mm;
     }
 
     .job {
-        padding-bottom: 4mm;
+        padding-bottom: 3mm;
+        break-inside: auto;
+    }
+
+    /* заголовок вакансии не отрывается от текста, пункты не рвутся */
+    .job__head,
+    .job__company {
+        break-after: avoid;
+    }
+
+    .job__list li {
+        break-inside: avoid;
     }
 
     .job__list {
-        font-size: 9pt;
+        font-size: 8.6pt;
+        gap: .26em;
         break-inside: avoid;
+    }
+
+    .job__company {
+        margin: .12em 0 .45em;
     }
 
     .cv-side .chip {
