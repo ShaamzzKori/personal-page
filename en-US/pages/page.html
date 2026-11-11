@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>New Page</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<nav>
-    <!--div class="logo">
-      <img class="img_logo" src="images/logo.jpg" title="logo"></img>
-    </div!-->
-    <div class="nav-menu">
-      <div class="nav-item"><a href="./CV.html" class="button-1" title="">About</a></div>
-      <div class="nav-item"><a href="" class="button-1" title="">Curriculum vitae</a></div>
-      <div class="nav-item"><a href="./projects.html" class="button-1" title="">Projects</a></div>
-      <div class="nav-item"><a href="" class="button-1" title="">Contacts</a></div>
-      <div class="lang_change"><div id="ru">RU</div><div id="en">EN</div></div>
-    </div>
-    
-  </nav>
-        
-        <script src="../js/vendor.js"></script>
-    </body>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Page in progress — Dmitriy Shtanenko</title>
+    <meta name="description" content="Template for an internal page of this site.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../img/favicons/appicon.ico" sizes="any">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/pages.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <span class="brand-text">
+                    <strong>Dmitriy Shtanenko</strong>
+                    <small>IT support · infrastructure</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Site language">
+                    <a href="../../ru-RU/pages/page.html" hreflang="ru" title="Русская версия">RU</a>
+                    <a href="page.html" aria-current="true" title="English version">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-head">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumbs">
+                    <a href="../index.html">Home</a><span>/</span><span>Page in progress</span>
+                </nav>
+                <h1>Page in progress</h1>
+                <p class="lede">This is the internal page template: same header, grid and typography as the rest of
+                    the site.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="prose">
+                    <p>
+                        Template markup: the main text block is width-limited so lines stay readable, while the
+                        service elements — breadcrumbs, heading and lede — are assembled from shared classes.
+                    </p>
+                    <h2>Adding a new page</h2>
+                    <ul>
+                        <li>Copy this file and rename it for the new section.</li>
+                        <li>Replace the heading, lede and the content inside <code>.prose</code>.</li>
+                        <li>Add an item to the navigation lists in the header and footer.</li>
+                        <li>Mark the item with <code>aria-current="page"</code>.</li>
+                    </ul>
+                </div>
+
+                <div class="btn-row mt-lg">
+                    <a class="btn btn--ghost" href="../index.html">Back to home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Dmitriy Shtanenko</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js" defer></script>
+</body>
+
 </html>

@@ -1,48 +1,256 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Главная</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <title>Дмитрий Штаненко — ИТ-специалист</title>
+    <meta name="description" content="Дмитрий Штаненко — ИТ-специалист: поддержка пользователей и производственных систем, инфраструктура, оборудование и сети.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../img/favicons/appicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/pages.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Дмитрий Штаненко — ИТ-специалист">
+    <meta property="og:description" content="Поддержка пользователей и производственных систем, инфраструктура, оборудование и сети.">
+    <meta property="og:image" content="../img/projects/personal.jpg">
+    <meta property="og:locale" content="ru_RU">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-menu">
-                <div class="nav-item"><a href="./pages/about.html" class="button-1" title="">Обо мне</a></div>
-                <div class="nav-item"><a href="./pages/cv.html" class="button-1" title="">Резюме</a></div>
-                <div class="nav-item"><a href="./pages/projects.html" class="button-1" title="">Примеры</a></div>
-                <div class="nav-item"><a href="./pages/contact.html" class="button-1" title="">Контакты</a></div>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
 
-                <div class="lang_change">
-                    <div title="Change language to English" class="active" id="ru"><a href="../en-US/index.html">RU</a></div>
-                    <div title="Изменить язык на Русский" id="en">EN</div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <span class="brand-text">
+                    <strong>Дмитрий Штаненко</strong>
+                    <small>ИТ-поддержка · инфраструктура</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Главная</a></li>
+                    <li><a href="pages/about.html">Обо мне</a></li>
+                    <li><a href="pages/cv.html">Резюме</a></li>
+                    <li><a href="pages/projects.html">Проекты</a></li>
+                    <li><a href="pages/contact.html">Контакты</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Язык сайта">
+                    <a href="index.html" aria-current="true" title="Русская версия">RU</a>
+                    <a href="../en-US/index.html" title="Switch to English">EN</a>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div class="content_all">
-            <div class="content__container">
-                <div class="intro">
-                    <div class="me">Дмитрий Штаненко</div>
-                </div>
-            </div>
-            <!--<div class="quote">Everything we hear is an opinion, not a fact Mark A.</div>!-->
+            </nav>
         </div>
-    </section>
+    </header>
 
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">ИТ-специалист · поддержка и инфраструктура</p>
+                    <h1>Дмитрий Штаненко</h1>
+                    <p class="hero-role">Вторая линия поддержки · производственные системы · оборудование и сети</p>
+                    <p class="lede">
+                        В ИТ с 2015 года: от оператора Service Desk до полной поддержки завода — пользователи,
+                        техника, сети, документация. Задача одна: чтобы ИТ не мешали людям работать.
+                    </p>
+
+                    <div class="btn-row">
+                        <a class="btn btn--accent" href="pages/cv.html">Открыть резюме</a>
+                        <a class="btn btn--ghost" href="pages/projects.html">Смотреть проекты</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path>
+                                <circle cx="12" cy="10" r="2.6"></circle>
+                            </svg>
+                            Истра, Московская область
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8.5"></circle>
+                                <path d="M12 7.5V12l3 2"></path>
+                            </svg>
+                            Опыт в ИТ с 2015 года
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 7h16M4 12h10M4 17h7"></path>
+                            </svg>
+                            RU · EN
+                        </span>
+                    </div>
+                </div>
+
+                <figure class="hero-figure reveal">
+                    <div class="hero-figure__frame">
+                        <img src="../img/photo.jpg" width="800" height="800" alt="Дмитрий Штаненко">
+                    </div>
+                    <figcaption>
+                        <span><span class="dot" aria-hidden="true"></span>Открыт к предложениям</span>
+                        <strong>ShaamzzKori</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Чем занимаюсь</p>
+                    <h2>Три направления, на которых держится поддержка</h2>
+                    <p>Не всё в ИТ одинаково срочно, но всё одинаково нужно: заявка пользователя, отказавшее железо и инструкция, которую кто-то прочитает в три часа ночи.</p>
+                </div>
+
+                <div class="focus-grid">
+                    <article class="card reveal" data-delay="0">
+                        <span class="card__index">01</span>
+                        <h3>Поддержка пользователей</h3>
+                        <p>Вторая линия и Service Desk: разбор обращения от первого контакта до закрытия заявки, удалённый доступ, работа с производственными системами.</p>
+                    </article>
+                    <article class="card reveal" data-delay="90">
+                        <span class="card__index">02</span>
+                        <h3>Оборудование и сети</h3>
+                        <p>Диагностика и модульный ремонт ПК, ноутбуков и серверов, установка и коммутация сетевого оборудования, профилактика и замена комплектующих.</p>
+                    </article>
+                    <article class="card reveal" data-delay="180">
+                        <span class="card__index">03</span>
+                        <h3>Документация и знания</h3>
+                        <p>Базы знаний и инструкции для пользователей и коллег. Фронтенд — способ проверять идеи на практике, а не только в теории.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="strip">
+            <div class="container">
+                <blockquote>
+                    Всё, что мы слышим, — мнение, а не факт. Всё, что мы видим, — точка зрения, а не истина.
+                    <cite>Марк Аврелий</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="reveal">
+                    <p class="eyebrow">Коротко</p>
+                    <h2>Обо мне</h2>
+                    <p>
+                        Начинал в 2015 году с приёма заявок в call-центре, затем диспетчеризация работ инженеров,
+                        а с 2017 года — непосредственно ИТ-поддержка на производстве: Danone в Екатеринбурге,
+                        затем Nutricia в Истре.
+                    </p>
+                    <p>
+                        За это время собрал для себя простой принцип: сначала воспроизвести проблему, потом
+                        чинить, и обязательно оставить после себя инструкцию — чтобы в следующий раз справился
+                        кто угодно.
+                    </p>
+                    <p><a class="link-arrow" href="pages/about.html">Подробнее обо мне
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 17 17 7M9 7h8v8"></path>
+                            </svg>
+                        </a></p>
+                </div>
+
+                <dl class="facts reveal" data-delay="80">
+                    <div class="facts__row">
+                        <dt>Опыт</dt>
+                        <dd>В ИТ с 2015 года, поддержка производства — с 2017</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Сейчас</dt>
+                        <dd>IT support engineer, производственная площадка (Nutricia Russia, Истра)</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Образование</dt>
+                        <dd>Полное среднее, незаконченное высшее — микроэлектроника и радиотехника</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Языки</dt>
+                        <dd>Русский — родной · Английский — B2 · Украинский, испанский — базовый уровень</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Локация</dt>
+                        <dd>Истра, Московская область · готов к командировкам и релокации</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <h2>Резюме целиком</h2>
+                        <p>Опыт, обязанности, навыки и языки — на одной странице, с возможностью сохранить в PDF.</p>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn" href="pages/cv.html">Открыть резюме</a>
+                        <a class="btn btn--ghost" href="pages/contact.html">Написать мне</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <p><strong>Дмитрий Штаненко</strong></p>
+                <p class="muted">ИТ-специалист · Истра, Московская область</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pages/about.html">Обо мне</a></li>
+                    <li><a href="pages/cv.html">Резюме</a></li>
+                    <li><a href="pages/projects.html">Проекты</a></li>
+                    <li><a href="pages/contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Связь</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../en-US/index.html" hreflang="en">English version</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Дмитрий Штаненко</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
 </body>
 
 </html>

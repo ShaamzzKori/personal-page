@@ -1,218 +1,314 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
 <head>
-    <title>CV</title>
-    <link rel="stylesheet" href="../../styles/cv.css">
+    <meta charset="utf-8">
+    <title>CV — Dmitriy Shtanenko</title>
+    <meta name="description" content="Dmitriy Shtanenko's CV: manufacturing IT support since 2017, skills, languages, education.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../img/favicons/appicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/header.css">
-    <link rel="icon" type="image/x-icon" href="../../img/favicons/appicon.ico">
-    <meta charset="UTF-8">
-    <meta name="description" content="Cover letter">
-    <meta name="keywords" content="Shaamzz Kori, Dmitriy Shtanenko, cv">
-    <meta name="author" content="Shaamzz Kori">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/cv.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-menu">
-            <div class="nav-item"><a href="../index.html" class="button-1" title="">Home</a></div>
-            <div class="nav-item"><a href="" class="button-1" title="">Loren Ipsum</a></div>
-            <div class="nav-item"><a href="./projects.html" class="button-1" title="">Projects</a></div>
-            <div class="nav-item"><a href="" class="button-1" title="">Contacts</a></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <div class="lang_change">
-                <div title="Change language to English" id="ru"><a href="../en-US/index.html">RU</a></div>
-                <div title="Изменить язык на Русский" class="active" id="en"><a href="../ru-RU/index.html">EN</a></div>
-            </div>
-        </div>
-    </nav>
-    <div class="all_CV">
-        <div class="bio_1">
-            <!-- About me <!-->
-            <div class="fio">Shtanenko Dmitriy Sergeevich</div>
-            <div class="photo"><img title="" alt="Photo is lost :(" src="../../img/photo.jpg"></img>
-            </div>
-            <div class="gender">
-                <br>
-                <div id="sex">male</div>
-                <script type="text/javascript">
-                    var dob = new Date("06/26/1992");
-                    //calculate month difference from current date in time
-                    var month_diff = Date.now() - dob.getTime();
-                    //convert the calculated difference in date format
-                    var age_dt = new Date(month_diff);
-                    //extract year from date    
-                    var year = age_dt.getUTCFullYear();
-                    //now calculate the age of the user
-                    var age = Math.abs(year - 1970);
-                    //display the calculated age
-                    document.write(age + "y");
-                </script>
-                <div id="date">26.06.1992</div>
-            </div>
-            <div class="contacts">
-                <div class="contact"><a title="Call and messengers" href="tel:+79827233158">+7(982) 723-31-58</a></div>
-                <div class="contact"><a title="Send a raven" href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></div>
-                <div class="contact"><a title="You're already here!" href="http://shaamzzkori.tk">http://shaamzzkori.tk</a></div>
-            </div>
-            <div class="reloc">Current location is: Russia, Istra. Ready for ossacional business trips. <br><br>Ready for relocation: from Russia.</div><br>
-            <div class="education">Сomplete secondary education, incomplete higher education in "Microelectronics and radio engineering"</div><br>
-            <div class="drive">Drive licence - B category</div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <span class="brand-text">
+                    <strong>Dmitriy Shtanenko</strong>
+                    <small>IT support · infrastructure</small>
+                </span>
+            </a>
 
-        </div>
-        <div class="exp_text">Work expierence</div>
-        <div class="work_exp">
-            <div class="current">
-                <!-- position current <!-->
-                <div class="dates">July 2019 — current</div>
-                <div class="company">Kelly Services IT Solutions (external worker for Nutricia Russia | Danone Russia, Istra plant)</div>
-                <div class="responsibility">
-                    <div class="job_name">IT support engineer</div>
-                    <div class="job_description">
-                        <ul>
-                            <li>Second line of support </li>
-                            <li>Support of industrial systems; </li>
-                            <li>Registration of requests coming from customers (internal employeers) or from other IT groups; </li>
-                            <li>Monitoring, control and completing requests in Service-Desk system; </li>
-                            <li>Provision technical and informational support, e.g remote support (by phone or via remote desktop tools);</li>
-                            <li>Infrastructure maintenance</li>
-                            <li>Installing and removal software; </li>
-                            <li>Software and hardware troubleshooting;</li>
-                            <li>Antivirus check-ups; </li>
-                            <li>Eliminating the effect of malware; </li>
-                            <li>Replacement of failed components in laptops, desktops and servers; </li>
-                            <li>Installation of network equipment and its switching; </li>
-                            <li>Participation in testing new hardware and software for further use in the company; </li>
-                            <li>Participation or consultation in business and/or IT projects; </li>
-                        </ul>
-                    </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html" aria-current="page">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Site language">
+                    <a href="../../ru-RU/pages/cv.html" hreflang="ru" title="Русская версия">RU</a>
+                    <a href="cv.html" aria-current="true" title="English version">EN</a>
                 </div>
-            </div>
-            <div class="n-1">
-                <!-- position n-1 <!-->
-                <div class="dates">December 2017 — Jule 2019</div>
-                <div class="company">Kelly Services IT Solutions (external worker for Danone Russia, Yekaterinburg plant)</div>
-                <div class="responsibility">
-                    <div class="job_name">IT specialist</div>
-                    <div class="job_description">
-                        <ul>
-                            <li>Second line of support; </li>
-                            <li>Support of industrial systems; </li>
-                            <li>Registration of requests coming from customers (internal employeers) or from other IT groups; </li>
-                            <li>Monitoring, control and completing requests in Service-Desk system; </li>
-                            <li>Provision technical and informational support, e.g remote support (by phone or via remote desktop tools);</li>
-                            <li>Infrastructure maintenance</li>
-                            <li>Installing and removal software; </li>
-                            <li>Software and hardware troubleshooting;</li>
-                            <li>Antivirus check-ups; </li>
-                            <li>Eliminating the effect of malware; </li>
-                            <li>Replacement of failed components in laptops, desktops and servers; </li>
-                            <li>Installation of network equipment and its switching; </li>
-                            <li>Twisted pair pulling, wire crimping and socket striping;</li>
-                        </ul>
-                    </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="cv-page">
+        <div class="container">
+            <div class="cv-actions">
+                <div>
+                    <p class="cv-actions__title">Curriculum vitae</p>
+                    <p class="cv-actions__note">Updated 2026 · use the button on the right to print or save as PDF</p>
+                </div>
+                <div class="btn-row">
+                    <button class="btn btn--accent btn--sm" type="button" data-print>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 9V4h10v5M7 19h10v-5H7z"></path>
+                            <path d="M5 9h14a2 2 0 0 1 2 2v5h-4M3 16V11a2 2 0 0 1 2-2"></path>
+                        </svg>
+                        Print / PDF
+                    </button>
+                    <a class="btn btn--ghost btn--sm" href="mailto:shaamzzkori@gmail.com">Email me</a>
                 </div>
             </div>
 
-            <div class="n-2">
-                <!-- position n-2 <!-->
-                <div class="dates">November 2015 — November 2017</div>
-                <div class="company">Company group MAYKOR, CRT service</div>
-                <div class="responsibility">
-                    <div class="job_name">Production manager</div>
-                    <div class="job_description">
-                        <ul>
-                            <li>Working in ORACLE, Jira, Remedy systems;</li>
-                            <li>Providing reports on the work done by engineers on time and in approved forms;</li>
-                            <li>Customer service, handling requests;</li>
-                            <li>Distribution of tasks for the execution of work on accepted applications between engineers;</li>
-                            <li>Monitoring compliance with the deadlines for the execution of work on accepted applications;</li>
-                            <li>Processing information received from customers;</li>
-                            <li>Processing requests for spare parts, placing orders for spare parts;</li>
-                            <li>Delivery control of the required spare parts, inventory control;</li>
-                            <li>Last months - control over timely and correct routing of applications;</li>
+            <article class="cv-sheet">
+                <aside class="cv-side">
+                    <figure class="cv-photo">
+                        <img src="../../img/photo.jpg" width="132" height="132" alt="Dmitriy Shtanenko">
+                    </figure>
+
+                    <section>
+                        <h2 class="cv-side-title">Contacts</h2>
+                        <div class="cv-list">
+                            <div class="cv-list__row">
+                                <span class="cv-list__label">Phone</span>
+                                <a href="tel:+79827233158">+7 (982) 723-31-58</a>
+                            </div>
+                            <div class="cv-list__row">
+                                <span class="cv-list__label">E-mail</span>
+                                <a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a>
+                            </div>
+                            <div class="cv-list__row">
+                                <span class="cv-list__label">GitHub</span>
+                                <a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a>
+                            </div>
+                            <div class="cv-list__row">
+                                <span class="cv-list__label">Location</span>
+                                <span>Istra, Moscow region</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="cv-side-title">Core skills</h2>
+                        <div class="chip-list">
+                            <span class="chip">IT support</span>
+                            <span class="chip">Service Desk</span>
+                            <span class="chip">PC diagnostics</span>
+                            <span class="chip">Modular repair</span>
+                            <span class="chip">Software setup</span>
+                            <span class="chip">Office equipment</span>
+                            <span class="chip">Network equipment</span>
+                            <span class="chip">MS Outlook</span>
+                            <span class="chip">MS Excel</span>
+                            <span class="chip">HTML5 / CSS3</span>
+                            <span class="chip">JavaScript</span>
+                            <span class="chip">Teamwork</span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="cv-side-title">Languages</h2>
+                        <div class="cv-langs">
+                            <div class="cv-lang">
+                                <div class="cv-lang__row">
+                                    <span class="cv-lang__name">Russian</span>
+                                    <span class="cv-lang__level">Native</span>
+                                </div>
+                                <div class="cv-lang__bar" aria-hidden="true">
+                                    <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span>
+                                </div>
+                            </div>
+                            <div class="cv-lang">
+                                <div class="cv-lang__row">
+                                    <span class="cv-lang__name">English</span>
+                                    <span class="cv-lang__level">B2</span>
+                                </div>
+                                <div class="cv-lang__bar" aria-hidden="true">
+                                    <span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span>
+                                </div>
+                            </div>
+                            <div class="cv-lang">
+                                <div class="cv-lang__row">
+                                    <span class="cv-lang__name">Ukrainian</span>
+                                    <span class="cv-lang__level">Basic</span>
+                                </div>
+                                <div class="cv-lang__bar" aria-hidden="true">
+                                    <span class="on"></span><span class="on"></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="cv-lang">
+                                <div class="cv-lang__row">
+                                    <span class="cv-lang__name">Spanish</span>
+                                    <span class="cv-lang__level">A1</span>
+                                </div>
+                                <div class="cv-lang__bar" aria-hidden="true">
+                                    <span class="on"></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="cv-side-title">Hobbies</h2>
+                        <div class="chip-list">
+                            <span class="chip">Cycling</span>
+                            <span class="chip">DIY devices</span>
+                            <span class="chip">Photography</span>
+                            <span class="chip">PC games</span>
+                            <span class="chip">Front-end</span>
+                        </div>
+                    </section>
+                </aside>
+
+                <div class="cv-main">
+                    <header class="cv-header">
+                        <h1 class="cv-name">Shtanenko Dmitriy Sergeevich</h1>
+                        <p class="cv-position">IT specialist · support and infrastructure</p>
+                        <ul class="cv-meta-inline">
+                            <li>Male</li>
+                            <li><span data-age="1992-06-26">34</span> years old, born 26 June 1992</li>
+                            <li>Driving licence, category B</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="n-3">
-                <!-- position n-3 <!-->
-                <div class="dates">April 2015 — November 2015</div>
-                <div class="company">LLC "Orgtehknika +"</div>
-                <div class="responsibility">
-                    <div class="job_name">Call Centre operator</div>
-                    <div class="job_description">
-                        <ul>
-                            <li>Reception of incoming requests (on a call and coming to ServiceDesk), processing, clarification of requests;</li>
-                            <li>Appointment to contractors, control over deadlines, confirmation of the fulfillment of applications;</li>
-                            <li>Communication with customer representatives (curators by regions) (shifting SLA deadlines and minor organizational issues);</li>
-                            <li>Receiving and distributing incoming calls;</li>
-                            <li>Work in ServiceDesk with a database of existing requests;</li>
+                    </header>
+
+                    <section class="cv-section">
+                        <h2 class="cv-section__title">Profile</h2>
+                        <p class="cv-summary">
+                            Support of manufacturing sites: second line, Service Desk, hardware and networking.
+                            I work where a stopped production line costs more than a ticket, so I value precise
+                            diagnostics, clear instructions and predictable timelines.
+                        </p>
+                    </section>
+
+                    <section class="cv-section">
+                        <h2 class="cv-section__title">Experience</h2>
+
+                        <article class="job job--current">
+                            <div class="job__head">
+                                <h3 class="job__title">IT support engineer</h3>
+                                <span class="job__dates">July 2019 — present</span>
+                            </div>
+                            <p class="job__company">Kelly Services IT Solutions · external specialist for Nutricia Russia (Danone), Istra plant</p>
+                            <ul class="job__list">
+                                <li>Second line support for end users and manufacturing systems.</li>
+                                <li>Registering, monitoring and completing requests in the Service Desk system.</li>
+                                <li>Technical and informational support, including remote work by phone and remote access tools.</li>
+                                <li>Installing software and troubleshooting hardware and software faults.</li>
+                                <li>Antivirus checks and remediation of malware impact.</li>
+                                <li>Replacing failed components in laptops, desktops and servers.</li>
+                                <li>Installing and patching network equipment.</li>
+                                <li>Testing new hardware and software before company-wide rollout.</li>
+                                <li>Participation and consultation in business and IT projects.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job__head">
+                                <h3 class="job__title">IT specialist</h3>
+                                <span class="job__dates">December 2017 — July 2019</span>
+                            </div>
+                            <p class="job__company">Kelly Services IT Solutions · external specialist for Danone Russia, Yekaterinburg plant</p>
+                            <ul class="job__list">
+                                <li>Second line support and maintenance of manufacturing systems.</li>
+                                <li>Processing requests from users and other IT groups in Service Desk.</li>
+                                <li>Diagnostics and repair of computer hardware, component replacement.</li>
+                                <li>Installation of network equipment; twisted pair pulling, wire crimping, socket termination.</li>
+                                <li>Preventive checks and maintenance of technical infrastructure.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job__head">
+                                <h3 class="job__title">Production dispatcher</h3>
+                                <span class="job__dates">November 2015 — November 2017</span>
+                            </div>
+                            <p class="job__company">MAYKOR group, CRT service</p>
+                            <ul class="job__list">
+                                <li>Distributing requests between engineers and controlling completion deadlines.</li>
+                                <li>Working in ORACLE, Jira and Remedy; reporting in approved formats.</li>
+                                <li>Handling spare part requests and orders, controlling deliveries and inventory write-offs.</li>
+                                <li>Controlling timely and correct routing of incoming requests.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job__head">
+                                <h3 class="job__title">Call centre operator</h3>
+                                <span class="job__dates">April 2015 — November 2015</span>
+                            </div>
+                            <p class="job__company">Orgtekhnika Plus LLC</p>
+                            <ul class="job__list">
+                                <li>Receiving and processing incoming requests, clarifying details.</li>
+                                <li>Assigning contractors, controlling deadlines, confirming completion.</li>
+                                <li>Communication with regional customer representatives, work with the ServiceDesk request database.</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section class="cv-section">
+                        <h2 class="cv-section__title">Education</h2>
+                        <ul class="job__list">
+                            <li>Complete secondary education.</li>
+                            <li>Incomplete higher education — microelectronics and radio engineering.</li>
                         </ul>
-                    </div>
+                        <p class="cv-note">Open to relocation: Moscow and the Moscow region, as well as outside Russia.</p>
+                    </section>
                 </div>
-            </div>
+            </article>
         </div>
-        <div class="skill_text">Core skills</div>
-        <div class="core_skills">
-            <!-- core skills <!-->
-            <p class="skill">Expierenced PC user ;)</p>
-            <!--p class="skill">Консультирование клиентов по телефону</p!-->
-            <p class="skill">Command work</p>
-            <!--p class="skill">Обработка входящей корреспонденции</p!-->
-            <!--p class="skill">Оформление заказов</p!-->
-            <p class="skill">Work with office equipment</p>
-            <p class="skill">Tecnical support</p>
-            <p class="skill">PC assembling and set-up</p>
-            <p class="skill">PC troubleshooting</p>
-            <p class="skill">PC module repairing</p>
-            <p class="skill">Sowtware installation, setting and troubleshooting</p>
-            <p class="skill">MS Outlook</p>
-            <p class="skill">MS Excel</p>
-            <p class="skill">HTML5</p>
-            <p class="skill">CSS3</p>
-            <p class="skill">JavaScript</p>
-        </div>
-        <div class="lang_text">Languages</div>
-        <div class="languages">
-            <!-- languages <!-->
-            <div class="lang">
-                <p class="lang_type">Russian </p>
-                <p class="text">&nbsp-&nbspNative</p>
-            </div>
-            <div class="lang">
-                <p class="lang_type">Ukrainian </p>
-                <p class="text">&nbsp-&nbspBasic</p>
-            </div>
-            <div class="lang">
-                <p class="lang_type">English </p>
-                <p class="text">&nbsp-&nbspB2 (C1&nbsp-&nbsp reading, B2&nbsp-&nbsplistening)</p>
-            </div>
-            <div class="lang">
-                <p class="lang_type">Spanish </p>
-                <p class="text">&nbsp-&nbspA1 (some basical vocabulary)</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <p><strong>Dmitriy Shtanenko</strong></p>
+                <p class="muted">IT specialist · Istra, Moscow region</p>
             </div>
 
-        </div>
-        <div class="hobby_text">Hobbies</div>
-        <div class="hobbies">
-            <!-- hobbies <!-->
-            <div class="hobbies_text">
-                <p class="hobby">Bicycling</p>
-                <p class="hobby">Simple DIY devices</p>
-                <p class="hobby">Photography</p>
-                <p class="hobby">PC games</p>
-                <p class="hobby">FrontEnd (HTML, CSS)</p>
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../../ru-RU/pages/cv.html" hreflang="ru">Русская версия</a></li>
+                </ul>
             </div>
         </div>
 
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Dmitriy Shtanenko</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
 
+    <script src="../../js/main.js" defer></script>
 </body>
-<footer>
-
-    <p class="footer_left">ShaamzzKori, 2021-2022</p>
-    <p class="footer_right"><a href="mailto:shaamzzkori@gmail.com" title="Send a raven">shaamzzkori@gmail.com</a></p>
-</footer>
 
 </html>

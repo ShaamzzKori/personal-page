@@ -1,215 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Choose your... language!</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicons/appicon.ico" type="image/x-icon">
+    <title>Дмитрий Штаненко — выбрать язык / choose language</title>
+    <meta name="description" content="Персональная страница Дмитрия Штаненко — ИТ-специалист. Русская и английская версии.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="img/favicons/appicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script>
-    </script>
-    <style>
-        span::before {
-            content: "Welcome to shaamzzkori.tk!"" please, choose language for continue";
-            animation: animate infinite linear 9s;
-        }
-        
-        @keyframes animate {
-            10% {
-                content: "Добро to shaamzzkori.tk!"" please, choose language for continue"
-            }
-            20% {
-                content: "Добро пожаловать to shaamzzkori.tk! please, choose language for continue"
-            }
-            30% {
-                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
-            }
-            40% {
-                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
-            }
-            50% {
-                content: "Добро пожаловать на shaamzzkori.tk! please, choose language for continue"
-            }
-            60% {
-                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, choose language for continue"
-            }
-            70% {
-                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите language for continue"
-            }
-            80% {
-                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык for continue"
-            }
-            90% {
-                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык для continue"
-            }
-            100% {
-                content: "Добро пожаловать на shaamzzkori.tk! пожалуйста, выберите язык для продолжения"
-            }
-        }
-        
-        html {
-            background-image: url(./img/bg.webp);
-            max-height: 100vh;
-            min-width: 100vw;
-            /* background-size: cover; */
-            background-repeat: no-repeat;
-            font-family: 'calibri';
-            font-size: calc(2.10vh);
-            color: blueviolet;
-        }
-        
-        .button {
-            font-size: 1.5rem;
-        }
-        
-        .greetings {
-            text-align: center;
-        }
-        
-        body {}
-        
-        div.buttons {
-            min-width: 40vw;
-            min-height: 5vh;
-            display: flex;
-            justify-items: center;
-            padding: 10%;
-            justify-content: space-between;
-            flex-direction: row;
-            align-content: space-between;
-        }
-        
-        div.russian {
-            border-radius: 15px;
-            padding: 5px;
-            transition: 500ms;
-        }
-        
-        div.russian:hover {
-            font-style: oblique;
-            font-size: 2rem;
-            background-color: blanchedalmond;
-            transition: 500ms;
-            transition-delay: 50ms;
-            transition-duration: 500ms;
-        }
-        
-        div.english {
-            border-radius: 15px;
-            padding: 5px;
-            transition: 500ms;
-        }
-        
-        div.english:hover {
-            font-style: oblique;
-            font-size: 2rem;
-            background-color: blanchedalmond;
-            transition: 500ms;
-            transition-delay: 50ms;
-            transition-duration: 500ms;
-            background-color: blue, 50%;
-        }
-        
-        button {
-            width: 15%;
-            height: 10%;
-            border-radius: 3%;
-        }
-        
-        a,
-        a:active,
-        a:visited,
-        a:hover {
-            text-decoration: none;
-            color: black;
-            font-size: larger;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        footer {
-            opacity: 0.8;
-            user-select: none;
-            position: absolute;
-            bottom: 5px;
-            left: 0px;
-            margin-top: auto;
-            min-width: 100vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: blanchedalmond;
-        }
-        
-        .footer_right a {
-            color: blanchedalmond;
-        }
-        
-        @media only screen and (max-width: 768px) and (orientation: portrait) {
-            div.greetings {
-                margin-top: 10%;
-                display: block;
-                text-align: center;
-            }
-            div.buttons {
-                flex-direction: column;
-                color: antiquewhite;
-                padding-top: 11vh;
-                padding-bottom: 11vh;
-            }
-            div.button {
-                margin-top: 10%;
-                margin-bottom: 15%;
-            }
-            a,
-            a:active,
-            a:visited,
-            a:hover {
-                color: cadetblue;
-            }
-            a:hover {
-                color: antiquewhite;
-                background-color: #272727;
-            }
-            div.russian:hover {
-                background-color: rgb(70 41 41);
-            }
-            div.english:hover {
-                background-color: rgb(64, 70, 41)
-            }
-            html {
-                background-image: none;
-                background-color: #252525;
-            }
-            footer,
-            .footer_right>a {
-                color: #646363;
-                align-items: flex-end;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages.css">
 </head>
 
-<body>
-    <div class="greetings"><span></span></div>
-    <div class="buttons">
-        <div class="russian button">
-            <a href="./ru-RU/index.html">Открыть сайт на Русском</a>
-        </div>
-        <div class="english button">
-            <a href="./en-US/index.html">Open site at English</a>
-        </div>
-    </div>
-    <footer>
-        <div class="footer_left">ShaamzzKori, 2021-2022</div>
-        <div class="footer_right"><a href="mailto:shaamzzkori@gmail.com" title="Send a raven">shaamzzkori@gmail.com</a></div>
-    </footer>
-</body>
+<body class="lang-body">
+    <main class="lang-page">
+        <div class="lang-split">
+            <div class="lang-panel">
+                <div class="container">
+                    <div class="lang-content">
+                        <span class="brand-mark brand-mark--lg" aria-hidden="true">ДШ</span>
 
+                        <p class="eyebrow">Персональная страница</p>
+                        <h1>Дмитрий<br>Штаненко</h1>
+                        <p class="lede">
+                            ИТ-специалист: поддержка пользователей и производственных систем, инфраструктура,
+                            оборудование и сети.
+                        </p>
+
+                        <div class="lang-options">
+                            <a class="lang-option" href="ru-RU/index.html">
+                                <span class="lang-option__code" aria-hidden="true">RU</span>
+                                <span class="lang-option__text">
+                                    <strong>Русский</strong>
+                                    <small>Продолжить на русском языке</small>
+                                </span>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h13M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+
+                            <a class="lang-option" href="en-US/index.html" hreflang="en">
+                                <span class="lang-option__code" aria-hidden="true">EN</span>
+                                <span class="lang-option__text">
+                                    <strong>English</strong>
+                                    <small>Continue in English</small>
+                                </span>
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M5 12h13M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="lang-footer">
+                            <a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a>
+                            <span class="muted">© <span data-year>2026</span> Дмитрий Штаненко</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lang-visual" role="presentation">
+                <div class="lang-visual__caption">
+                    <blockquote>Всё, что мы слышим, — мнение, а не факт.</blockquote>
+                    <cite>Марк Аврелий</cite>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+</body>
 
 </html>

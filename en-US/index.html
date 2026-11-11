@@ -1,55 +1,255 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MainPage - Dmitriy Shtanenko</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <title>Dmitriy Shtanenko — IT Support Engineer</title>
+    <meta name="description" content="Dmitriy Shtanenko — IT specialist: end-user and manufacturing systems support, infrastructure, hardware and networking.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../img/favicons/appicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/pages.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dmitriy Shtanenko — IT Support Engineer">
+    <meta property="og:description" content="End-user and manufacturing systems support, infrastructure, hardware and networking.">
+    <meta property="og:image" content="../img/projects/personal.jpg">
+    <meta property="og:locale" content="en_US">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="nav-menu">
-                <div class="nav-item"><a href="../en-US/pages/about.html" class="button-1" title="">About me</a></div>
-                <div class="nav-item"><a href="../en-US/pages/cv.html" class="button-1" title="">My CV</a></div>
-                <div class="nav-item"><a href="../en-US/pages/projects.html" class="button-1" title="">Examples</a></div>
-                <div class="nav-item"><a href="../en-US/pages/contact.html" class="button-1" title="">Contacts</a></div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-                <div class="lang_change">
-                    <div title="Change language to English" id="ru"><a href="../en-US/index.html">RU</a></div>
-                    <div title="Изменить язык на Русский" class="active" id="en"><a href="../ru-RU/index.html">EN</a></div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="content_all">
-            <div class="content__container">
-                <div class="intro">
-                    <div class="me">Dmitriy Shtanenko</div>
-                </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <span class="brand-text">
+                    <strong>Dmitriy Shtanenko</strong>
+                    <small>IT support · infrastructure</small>
+                </span>
+            </a>
 
-            </div>
-            <!--<div class="quote">Everything we hear is an opinion, not a fact Mark A.</div>!-->
-            <!--footer style="width: 100%; display: flex; flex-direction: row; justify-content: space-between; position: absolute; bottom: 0;">
-                <p class="footer_left">ShaamzzKori, 2021-2022</p>
-                <p class="footer_right"><a href="mailto:shaamzzkori@gmail.com" title="Send a raven">shaamzzkori@gmail.com</a></p>
-            </footer !-->
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/cv.html">CV</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contacts</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Site language">
+                    <a href="../ru-RU/index.html" hreflang="ru" title="Русская версия">RU</a>
+                    <a href="index.html" aria-current="true" title="English version">EN</a>
+                </div>
+            </nav>
         </div>
+    </header>
 
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">IT specialist · support &amp; infrastructure</p>
+                    <h1>Dmitriy Shtanenko</h1>
+                    <p class="hero-role">Second line support · manufacturing systems · hardware and networking</p>
+                    <p class="lede">
+                        In IT since 2015 — from a Service Desk operator to full support of a production plant:
+                        people, hardware, networks, documentation. One goal: keep IT out of the way of the work.
+                    </p>
+
+                    <div class="btn-row">
+                        <a class="btn btn--accent" href="pages/cv.html">Open my CV</a>
+                        <a class="btn btn--ghost" href="pages/projects.html">View projects</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"></path>
+                                <circle cx="12" cy="10" r="2.6"></circle>
+                            </svg>
+                            Istra, Moscow region
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8.5"></circle>
+                                <path d="M12 7.5V12l3 2"></path>
+                            </svg>
+                            In IT since 2015
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 7h16M4 12h10M4 17h7"></path>
+                            </svg>
+                            RU · EN
+                        </span>
+                    </div>
+                </div>
+
+                <figure class="hero-figure reveal">
+                    <div class="hero-figure__frame">
+                        <img src="../img/photo.jpg" width="800" height="800" alt="Dmitriy Shtanenko">
+                    </div>
+                    <figcaption>
+                        <span><span class="dot" aria-hidden="true"></span>Open to offers</span>
+                        <strong>ShaamzzKori</strong>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">What I do</p>
+                    <h2>Three things support actually rests on</h2>
+                    <p>Not everything in IT is urgent, but everything is needed: a user's ticket, a dead workstation and the instructions somebody reads at 3 a.m.</p>
+                </div>
+
+                <div class="focus-grid">
+                    <article class="card reveal" data-delay="0">
+                        <span class="card__index">01</span>
+                        <h3>End-user support</h3>
+                        <p>Second line and Service Desk: handling a request from first contact to closure, remote access, work with manufacturing systems.</p>
+                    </article>
+                    <article class="card reveal" data-delay="90">
+                        <span class="card__index">02</span>
+                        <h3>Hardware &amp; networking</h3>
+                        <p>Diagnostics and modular repair of PCs, laptops and servers, installation and patching of network equipment, preventive maintenance.</p>
+                    </article>
+                    <article class="card reveal" data-delay="180">
+                        <span class="card__index">03</span>
+                        <h3>Documentation &amp; knowledge</h3>
+                        <p>Knowledge bases and instructions for users and colleagues. Front-end is how I test ideas in practice rather than on paper.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="strip">
+            <div class="container">
+                <blockquote>
+                    Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.
+                    <cite>Marcus Aurelius</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="reveal">
+                    <p class="eyebrow">In short</p>
+                    <h2>About me</h2>
+                    <p>
+                        I started in 2015 taking calls in a service desk queue, then moved to dispatching field
+                        engineers, and since 2017 I have worked directly in IT support at manufacturing sites:
+                        Danone in Yekaterinburg, then Nutricia in Istra.
+                    </p>
+                    <p>
+                        Along the way I settled on a simple rule: reproduce the problem first, then fix it — and
+                        always leave an instruction behind, so the next person can handle it.
+                    </p>
+                    <p><a class="link-arrow" href="pages/about.html">More about me
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 17 17 7M9 7h8v8"></path>
+                            </svg>
+                        </a></p>
+                </div>
+
+                <dl class="facts reveal" data-delay="80">
+                    <div class="facts__row">
+                        <dt>Experience</dt>
+                        <dd>In IT since 2015; manufacturing support since 2017</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Currently</dt>
+                        <dd>IT support engineer, production site (Nutricia Russia, Istra)</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Education</dt>
+                        <dd>Complete secondary; incomplete higher — microelectronics and radio engineering</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Languages</dt>
+                        <dd>Russian — native · English — B2 · Ukrainian, Spanish — basic</dd>
+                    </div>
+                    <div class="facts__row">
+                        <dt>Location</dt>
+                        <dd>Istra, Moscow region · open to business trips and relocation</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <h2>The full CV</h2>
+                        <p>Experience, responsibilities, skills and languages on one page — printable as PDF.</p>
+                    </div>
+                    <div class="btn-row">
+                        <a class="btn" href="pages/cv.html">Open my CV</a>
+                        <a class="btn btn--ghost" href="pages/contact.html">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-</body>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <p><strong>Dmitriy Shtanenko</strong></p>
+                <p class="muted">IT specialist · Istra, Moscow region</p>
+            </div>
 
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/cv.html">CV</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../ru-RU/index.html" hreflang="ru">Русская версия</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Dmitriy Shtanenko</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
 
 </html>

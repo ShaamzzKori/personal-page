@@ -1,49 +1,185 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Как связаться</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<nav>
-    <!--div class="logo">
-      <img class="img_logo" src="images/logo.jpg" title="logo"></img>
-    </div!-->
-    <div class="nav-menu">
-      <div class="nav-item"><a href="../index.html" class="button-1" title="">Главная</a></div>
-      <div class="nav-item"><a href="./about.html" class="button-1" title="">Обо мне</a></div>
-      <div class="nav-item"><a href="./cv.html" class="button-1" title="">Резюме</a></div>
-      <div class="nav-item"><a href="./projects.html" class="button-1" title="">Проекты</a></div>
+<html lang="ru" class="no-js">
 
-      <div class="lang_change"><div id="ru">RU</div><div id="en">EN</div></div>
-    </div>
-    
-  </nav>
-        
-        <script src="../js/vendor.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Контакты — Дмитрий Штаненко</title>
+    <meta name="description" content="Связаться с Дмитрием Штаненко: e-mail, телефон, GitHub.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../img/favicons/appicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/pages.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <span class="brand-text">
+                    <strong>Дмитрий Штаненко</strong>
+                    <small>ИТ-поддержка · инфраструктура</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="cv.html">Резюме</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="contact.html" aria-current="page">Контакты</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Язык сайта">
+                    <a href="contact.html" aria-current="true" title="Русская версия">RU</a>
+                    <a href="../../en-US/pages/contact.html" title="Switch to English">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-head">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Хлебные крошки">
+                    <a href="../index.html">Главная</a><span>/</span><span>Контакты</span>
+                </nav>
+                <h1>Контакты</h1>
+                <p class="lede">Почта — самый надёжный канал: письмо не потеряется в уведомлениях. Телефон — если
+                    вопрос срочный, GitHub — если интересно, как это всё сделано.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <a class="contact-card reveal" href="mailto:shaamzzkori@gmail.com">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="5" width="18" height="14" rx="2.5"></rect>
+                                <path d="m3.5 7 8.5 6 8.5-6"></path>
+                            </svg>
+                        </span>
+                        <span class="contact-card__label">E-mail</span>
+                        <span class="contact-card__value">shaamzzkori@gmail.com</span>
+                        <span class="contact-card__note">Основной канал — для вакансий, задач и вопросов по резюме.</span>
+                    </a>
+
+                    <a class="contact-card reveal" data-delay="90" href="tel:+79827233158">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6.5 3.5h2.2l1.5 3.6-1.9 1.3a12 12 0 0 0 5.3 5.3l1.3-1.9 3.6 1.5v2.2a3 3 0 0 1-3.2 3A15.5 15.5 0 0 1 3.5 6.7a3 3 0 0 1 3-3.2z"></path>
+                            </svg>
+                        </span>
+                        <span class="contact-card__label">Телефон</span>
+                        <span class="contact-card__value">+7 (982) 723-31-58</span>
+                        <span class="contact-card__note">Звонки и мессенджеры. Часовой пояс — Москва (UTC+3).</span>
+                    </a>
+
+                    <a class="contact-card reveal" data-delay="180" href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">
+                        <span class="contact-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" class="is-filled" aria-hidden="true">
+                                <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"></path>
+                            </svg>
+                        </span>
+                        <span class="contact-card__label">GitHub</span>
+                        <span class="contact-card__value">github.com/ShaamzzKori</span>
+                        <span class="contact-card__note">Проекты, исходники этого сайта и учебные эксперименты.</span>
+                    </a>
+                </div>
+
+                <div class="split mt-xl">
+                    <div class="reveal">
+                        <p class="eyebrow">Что дальше</p>
+                        <h2>Если вопрос по работе</h2>
+                        <p>
+                            Пришлите короткое описание задачи и, если есть, ссылку на вакансию — так проще
+                            ответить по существу. Резюме с полным опытом и навыками лежит отдельно и доступно
+                            для печати в PDF.
+                        </p>
+                        <div class="btn-row mt-lg">
+                            <a class="btn btn--accent" href="cv.html">Открыть резюме</a>
+                            <a class="btn btn--ghost" href="mailto:shaamzzkori@gmail.com?subject=%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D1%83">Написать письмо</a>
+                        </div>
+                    </div>
+
+                    <dl class="facts reveal" data-delay="80">
+                        <div class="facts__row">
+                            <dt>Город</dt>
+                            <dd>Истра, Московская область (UTC+3)</dd>
+                        </div>
+                        <div class="facts__row">
+                            <dt>Формат</dt>
+                            <dd>Готов к командировкам и релокации</dd>
+                        </div>
+                        <div class="facts__row">
+                            <dt>Языки</dt>
+                            <dd>Русский — родной · Английский — B2</dd>
+                        </div>
+                        <div class="facts__row">
+                            <dt>Резюме</dt>
+                            <dd>PDF — через кнопку печати на странице резюме</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <p><strong>Дмитрий Штаненко</strong></p>
+                <p class="muted">ИТ-специалист · Истра, Московская область</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="cv.html">Резюме</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Связь</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../../en-US/pages/contact.html" hreflang="en">English version</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Дмитрий Штаненко</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js" defer></script>
+</body>
+
 </html>

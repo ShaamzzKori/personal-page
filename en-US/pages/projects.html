@@ -1,80 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Projects</title>
-    <meta name="theme-color" content="#c9e0e04d">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" sizes="32x32" href="../../img/favicons/appicon.ico" type="image/png">
-    <link rel="stylesheet" href="../../styles/header.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/footer.css">
+    <title>Projects — Dmitriy Shtanenko</title>
+    <meta name="description" content="Learning and working projects by Dmitriy Shtanenko: a knowledge base, a driving school landing page and this site.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../img/favicons/appicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/pages.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav>
-        <div class="nav-menu">
-            <div class="nav-item"><a href="../index.html" class="button-1" title="">Main Page</a></div>
-            <div class="nav-item"><a href="./about.html" class="button-1" title="">About me</a></div>
-            <div class="nav-item"><a href="../pages/cv.html" class="button-1" title="">My CV</a></div>
-            <div class="nav-item"><a href="../pages/contact.html" class="button-1" title="">Contacts</a></div>
-            <div class="lang_change">
-                <div id="ru">RU</div>
-                <div id="en">EN</div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <span class="brand-text">
+                    <strong>Dmitriy Shtanenko</strong>
+                    <small>IT support · infrastructure</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Site language">
+                    <a href="../../ru-RU/pages/projects.html" hreflang="ru" title="Русская версия">RU</a>
+                    <a href="projects.html" aria-current="true" title="English version">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-head">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumbs">
+                    <a href="../index.html">Home</a><span>/</span><span>Projects</span>
+                </nav>
+                <h1>Projects</h1>
+                <p class="lede">Three things I built myself: a working knowledge base, a learning landing page and this
+                    site. All of them in plain HTML, CSS and JavaScript.</p>
             </div>
         </div>
 
-    </nav>
-    <main>
-        <section id="fin_project" class="finished">
-            <div class="project">
-                <div class="p_name">Knowledge base</div>
-                <div class="p_description">It was my really first project where I collect all important info for work at Danone. From several lines HTML code, it's my working insrument now. I maintenance it and add/remove information. Also it still uses as sandbox for some fresh
-                    ideas. </div>
-                <div class="p_image"><img width="350" height="250" src="../../img/projects/knowledge.jpg" alt="knowledge-base image" /></div>
-                <div class="links">
-                    <div class="lsite" tooltip="hint: some projects sometimes may be unavailable"><a href="https://myknowledge.pages.dev" rel="noopener" target="_blank">Project on the site</a></div>
-                    <div class="lgit" tooltip="hint: some projects sometimes may be unavailable"><a href="https://github.com/ShaamzzKori/Myknowledge" rel="noopener" target="_blank">Project in Github</a></div>
+        <section class="section">
+            <div class="container">
+                <div class="project-list">
+                    <article class="project-card reveal">
+                        <div class="project-card__media">
+                            <img src="../../img/projects/knowledge.jpg" width="960" height="465" alt="Knowledge base screenshot">
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__top">
+                                <h2>Knowledge base</h2>
+                                <span class="project-card__year">Working tool</span>
+                            </div>
+                            <p>
+                                My first real project: all the work information for the Danone site collected in one
+                                place. It began as a few lines of HTML; now it is a tool I use every day — maintaining
+                                it, filling it in and using it as a sandbox for new ideas.
+                            </p>
+                            <div class="chip-list">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">JavaScript</span>
+                                <span class="chip">Cloudflare Pages</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a class="btn btn--ghost btn--sm" href="https://myknowledge.pages.dev" target="_blank" rel="noopener">
+                                    View site
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8"></path>
+                                    </svg>
+                                </a>
+                                <a class="btn btn--ghost btn--sm" href="https://github.com/ShaamzzKori/Myknowledge" target="_blank" rel="noopener">
+                                    Code on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-delay="90">
+                        <div class="project-card__media">
+                            <img src="../../img/projects/diamant1.jpg" width="960" height="465" alt="Diamant driving school site screenshot">
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__top">
+                                <h2>Diamant — learning centre and driving school</h2>
+                                <span class="project-card__year">Learning project</span>
+                            </div>
+                            <p>
+                                The goal was to test myself: reproduce someone else's layout and carefully rework it.
+                                I planned to offer the result instead of their old site, but circumstances changed —
+                                the project stayed as an exercise in layout.
+                            </p>
+                            <div class="chip-list">
+                                <span class="chip">HTML</span>
+                                <span class="chip">CSS</span>
+                                <span class="chip">Responsive layout</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a class="btn btn--ghost btn--sm" href="https://diamant.pages.dev" target="_blank" rel="noopener">
+                                    View site
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8"></path>
+                                    </svg>
+                                </a>
+                                <a class="btn btn--ghost btn--sm" href="https://github.com/ShaamzzKori/diamant" target="_blank" rel="noopener">
+                                    Code on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" data-delay="180">
+                        <div class="project-card__media">
+                            <img src="../../img/projects/personal.jpg" width="960" height="465" alt="Screenshot of this site">
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__top">
+                                <h2>This site</h2>
+                                <span class="project-card__year">Pet project</span>
+                            </div>
+                            <p>
+                                A place that gathers everything I know about layout: semantics, responsiveness,
+                                typography, hover states, accessibility and a separate print stylesheet for the CV.
+                                No frameworks — just HTML, CSS and a bit of vanilla JS.
+                            </p>
+                            <div class="chip-list">
+                                <span class="chip">HTML5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">Vanilla JS</span>
+                                <span class="chip">GitHub Pages</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a class="btn btn--ghost btn--sm" href="https://shaamzkori.pages.dev" target="_blank" rel="noopener">
+                                    View site
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M7 17 17 7M9 7h8v8"></path>
+                                    </svg>
+                                </a>
+                                <a class="btn btn--ghost btn--sm" href="https://github.com/ShaamzzKori/personal-page" target="_blank" rel="noopener">
+                                    Code on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
+
+                <p class="note-sm">
+                    Some projects are hosted on free platforms and are occasionally unavailable.
+                </p>
             </div>
-            <div class="project">
-                <div class="p_name">Diamant - learning center and driving school</div>
-                <div class="p_description">Another project for self-education. Main target was to see how I can copy and quite change other site. I've planned suggest my solution instead their <a href="https://diamant-profi.ru/index.php" target="_blank" rel="noopener">old site</a>                    but... Time changed. </div>
-                <div class="p_image"><img width="350" height="250" src="../../img/projects/diamant1.jpg" /> </div>
-                <div class="links">
-                    <div class="lsite" tooltip="hint: some projects sometimes may be unavailable"><a href="https://diamant.pages.dev" rel="noopener" target="_blank">Project on the site</a></div>
-                    <div class="lgit" tooltip="hint: some projects sometimes may be unavailable"><a href="https://github.com/ShaamzzKori/diamant" rel="noopener" target="_blank">Project in Github</a></div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="p_name">Current site</div>
-                <div class="p_description">My main project on current time. There I try implement all features what I've known.</div>
-                <div class="p_image"><img width="350" height="250" src="../../img/projects/personal.jpg" /> </div>
-                <div class="links">
-                    <div class="lsite" tooltip="hint: some projects sometimes may be unavailable"><a href="https://shaamzkori.pages.dev" rel="noopener" target="_blank">Project on the site</a></div>
-                    <div class="lgit" tooltip="hint: some projects sometimes may be unavailable"><a href="https://github.com/ShaamzzKori/personal-page" rel="noopener" target="_blank">Project in Github. Currently in refresh branch.</a></div>
-                </div>
-            </div>
-        </section>
-        <section id="unfin_project" class="unfinished">
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
         </section>
     </main>
 
-    <script src="../js/vendor.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">DS</span>
+                <p><strong>Dmitriy Shtanenko</strong></p>
+                <p class="muted">IT specialist · Istra, Moscow region</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sections</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../../ru-RU/pages/projects.html" hreflang="ru">Русская версия</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Dmitriy Shtanenko</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js" defer></script>
 </body>
-<footer>
-    <p class="footer_left">ShaamzzKori, 2021-2022</p>
-    <p class="footer_right"><a href="mailto:shaamzzkori@gmail.com" title="Send a raven">shaamzzkori@gmail.com</a></p>
-</footer>
 
 </html>

@@ -1,23 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Choose your... language!</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="./img/favicons/appicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/header.css">
+    <title>Страница не найдена — Дмитрий Штаненко</title>
+    <meta name="description" content="Страница не найдена.">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicons/appicon.ico" sizes="any">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/pages.css">
 </head>
 
 <body>
-    <div style="position: center;">Hello! Seems you've been lost. Do you want return on the <a style="font-style: oblique; color: brown;" onclick="history.back()">previous page?</a></div>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <span class="brand-text">
+                    <strong>Дмитрий Штаненко</strong>
+                    <small>ИТ-поддержка · инфраструктура</small>
+                </span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="ru-RU/index.html">Русская версия</a></li>
+                    <li><a href="en-US/index.html" hreflang="en">English version</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="utility">
+        <div class="container">
+            <div class="utility-inner">
+                <span class="utility-code" aria-hidden="true">404</span>
+                <h1>Страница не найдена</h1>
+                <p class="lede">
+                    Такой страницы здесь нет — возможно, ссылка устарела. Начните с главной или вернитесь
+                    туда, откуда пришли.
+                </p>
+                <div class="btn-row mt-lg">
+                    <a class="btn btn--accent" href="ru-RU/index.html">На главную</a>
+                    <button class="btn btn--ghost" type="button" onclick="history.back()">Назад</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Дмитрий Штаненко</span>
+            <span><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></span>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

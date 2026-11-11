@@ -1,55 +1,200 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Обо мне</title>
-    <meta name="theme-color" content="#c9e0e04d">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <title>Обо мне — Дмитрий Штаненко</title>
+    <meta name="description" content="О Дмитрии Штаненко: путь в ИТ с 2015 года, принципы работы, профессиональный опыт и увлечения.">
+    <meta name="author" content="ShaamzzKori">
+    <meta name="theme-color" content="#FBF8F3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../img/favicons/appicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../../img/favicons/appicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+
+    <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/pages.css">
 </head>
 
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@400;600&family=Quicksand:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <nav>
-        <!--div class="logo">
-      <img class="img_logo" src="images/logo.jpg" title="logo"></img>
-    </div!-->
-        <div class="nav-menu">
-            <div class="nav-item"><a href="../index.html" class="button-1" title="">Главная</a></div>
-            <div class="nav-item"><a href="./cv.html" class="button-1" title="">Резюме</a></div>
-            <div class="nav-item"><a href="./projects.html" class="button-1" title="">Проекты</a></div>
-            <div class="nav-item"><a href="./contact.html" class="button-1" title="">Контакты</a></div>
-            <div class="lang_change">
-                <div id="ru">RU</div>
-                <div id="en">EN</div>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <span class="brand-text">
+                    <strong>Дмитрий Штаненко</strong>
+                    <small>ИТ-поддержка · инфраструктура</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html" aria-current="page">Обо мне</a></li>
+                    <li><a href="cv.html">Резюме</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="lang-switch" role="group" aria-label="Язык сайта">
+                    <a href="about.html" aria-current="true" title="Русская версия">RU</a>
+                    <a href="../../en-US/pages/about.html" title="Switch to English">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-head">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Хлебные крошки">
+                    <a href="../index.html">Главная</a><span>/</span><span>Обо мне</span>
+                </nav>
+                <h1>Обо мне</h1>
+                <p class="lede">ИТ-поддержка — это не только тикеты. Это люди, которым нужно, чтобы принтер работал
+                    прямо сейчас, и инфраструктура, которая не должна падать в смену.</p>
             </div>
         </div>
 
-    </nav>
+        <section class="section">
+            <div class="container about-grid">
+                <div class="prose reveal">
+                    <h2>Как я попал в ИТ</h2>
+                    <p>
+                        В 2015 году начал с приёма заявок в call-центре: разбирался, что именно сломалось у человека
+                        на другом конце линии, и передавал это инженерам. Через полгода перешёл в диспетчеризацию
+                        работ в MAYKOR — там пришлось увидеть поддержку как процесс: сроки, SLA, ЗИП, отчётность.
+                    </p>
+                    <p>
+                        С декабря 2017 года работаю непосредственно с техникой: сначала завод Danone в Екатеринбурге,
+                        с 2019 года — Nutricia (Danone) в Истре. Вторая линия, производственные системы, серверы,
+                        сетевое оборудование, антивирусная гигиена.
+                    </p>
 
-    <script src="../js/vendor.js"></script>
+                    <h2>Как я работаю</h2>
+                    <ul>
+                        <li><strong>Сначала воспроизвести.</strong> Пока проблема не воспроизводится, любое решение —
+                            догадка. Диагностика экономнее, чем «переустановить и посмотреть».</li>
+                        <li><strong>Починить так, чтобы не вернулось.</strong> Замена комплектующих и настройка ПО —
+                            повод найти причину, а не только следствие.</li>
+                        <li><strong>Оставить инструкцию.</strong> После сложной задачи появляется короткий документ,
+                            чтобы в следующий раз справился любой коллега — или я сам через полгода.</li>
+                    </ul>
+
+                    <h2>Путь</h2>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <span class="timeline__date">Июль 2019 — настоящее время</span>
+                            <span class="timeline__title">IT support engineer</span>
+                            <span class="timeline__place">Kelly Services IT Solutions · Nutricia Russia (Danone), Истра</span>
+                        </div>
+                        <div class="timeline__item">
+                            <span class="timeline__date">Декабрь 2017 — июль 2019</span>
+                            <span class="timeline__title">IT specialist</span>
+                            <span class="timeline__place">Kelly Services IT Solutions · Danone Russia, Екатеринбург</span>
+                        </div>
+                        <div class="timeline__item">
+                            <span class="timeline__date">Ноябрь 2015 — ноябрь 2017</span>
+                            <span class="timeline__title">Диспетчер производства</span>
+                            <span class="timeline__place">Группа компаний MAYKOR, CRT service</span>
+                        </div>
+                        <div class="timeline__item">
+                            <span class="timeline__date">Апрель 2015 — ноябрь 2015</span>
+                            <span class="timeline__title">Оператор call-центра</span>
+                            <span class="timeline__place">ООО «Оргтехника плюс»</span>
+                        </div>
+                    </div>
+
+                    <h2>Вне работы</h2>
+                    <p>
+                        Велосипед, паяльник и самодельные устройства, фотография и ПК-игры. Отдельно — фронтенд:
+                        этот сайт свёрстан вручную на HTML, CSS и JavaScript, без фреймворков и конструкторов.
+                        Это самый честный способ проверить, что понимаешь в вёрстке.
+                    </p>
+
+                    <div class="btn-row mt-lg">
+                        <a class="btn btn--accent" href="cv.html">Смотреть резюме</a>
+                        <a class="btn btn--ghost" href="projects.html">Проекты</a>
+                    </div>
+                </div>
+
+                <aside class="about-portrait reveal" data-delay="80">
+                    <img src="../../img/photo.jpg" width="600" height="600" alt="Дмитрий Штаненко">
+                    <dl>
+                        <div>
+                            <dt>Город</dt>
+                            <dd>Истра, Московская область</dd>
+                        </div>
+                        <div>
+                            <dt>Опыт в ИТ</dt>
+                            <dd>С 2015 года; поддержка производства — с 2017</dd>
+                        </div>
+                        <div>
+                            <dt>Специализация</dt>
+                            <dd>Вторая линия, оборудование, сети, документация</dd>
+                        </div>
+                        <div>
+                            <dt>Языки</dt>
+                            <dd>Русский, английский (B2), украинский, испанский (A1)</dd>
+                        </div>
+                        <div>
+                            <dt>Переезд</dt>
+                            <dd>Готов к командировкам и релокации</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">ДШ</span>
+                <p><strong>Дмитрий Штаненко</strong></p>
+                <p class="muted">ИТ-специалист · Истра, Московская область</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Разделы</h4>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="cv.html">Резюме</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Связь</h4>
+                <ul>
+                    <li><a href="mailto:shaamzzkori@gmail.com">shaamzzkori@gmail.com</a></li>
+                    <li><a href="tel:+79827233158">+7 (982) 723-31-58</a></li>
+                    <li><a href="https://github.com/ShaamzzKori" target="_blank" rel="noopener">github.com/ShaamzzKori</a></li>
+                    <li><a href="../../en-US/pages/about.html" hreflang="en">English version</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>© <span data-year>2026</span> Дмитрий Штаненко</span>
+            <span>HTML · CSS · JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js" defer></script>
 </body>
 
 </html>
