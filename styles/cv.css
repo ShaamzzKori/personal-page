@@ -167,7 +167,7 @@
     flex: 1;
     height: 3px;
     border-radius: 2px;
-    background-color: #DBD2C4;
+    background-color: var(--bar-off);
 }
 
 .cv-lang__bar span.on {
@@ -402,6 +402,36 @@
         color: #000;
         font-size: 10pt;
         line-height: 1.45;
+    }
+
+    /* печать всегда светлая, даже если система в тёмной теме */
+    .cv-sheet,
+    .cv-side,
+    .cv-main,
+    .cv-list,
+    .cv-photo {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+
+    .cv-name,
+    .cv-summary,
+    .job__title,
+    .job__list,
+    .cv-meta-inline,
+    .cv-section__title,
+    .cv-side-title,
+    .cv-lang__level,
+    .cv-list a,
+    .cv-note {
+        color: #000 !important;
+    }
+
+    .cv-position,
+    .job__company,
+    .job__dates {
+        color: #333 !important;
     }
 
     .site-header,

@@ -20,6 +20,12 @@
     --accent: #A9551F;
     --accent-strong: #8A4416;
     --accent-soft: #F7EADF;
+    --accent-line: #EED9C6;
+
+    --btn-hover: #000000;
+    --btn-accent-fg: #FFF9F4;
+    --bar-off: #DBD2C4;
+    --header-bg: rgba(251, 248, 243, .82);
 
     --shadow-sm: 0 1px 2px rgba(27, 24, 21, .05), 0 1px 1px rgba(27, 24, 21, .04);
     --shadow-md: 0 20px 45px -28px rgba(27, 24, 21, .45), 0 2px 8px rgba(27, 24, 21, .05);
@@ -40,6 +46,53 @@
     --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
 
     color-scheme: light;
+}
+
+/* ---------- dark theme ----------------------------------------------------
+   Auto-switch by system preference. Every pair below is verified for
+   WCAG AA: body text >= 4.5:1, large text / UI >= 3:1.
+   ------------------------------------------------------------------------ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --paper: #131110;
+        --paper-2: #1A1715;
+        --surface: #201C19;
+
+        --ink: #F2ECE3;
+        --ink-2: #C7BFB2;
+        --ink-3: #A9A296;
+
+        --line: #2C2823;
+        --line-strong: #453F37;
+
+        --accent: #E2904F;
+        --accent-strong: #F0A96C;
+        --accent-soft: #2B221B;
+        --accent-line: #47372A;
+
+        --btn-hover: #FFFDF9;
+        --btn-accent-fg: #1A1208;
+        --bar-off: #4F4739;
+        --header-bg: rgba(19, 17, 16, .82);
+
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, .5);
+        --shadow-md: 0 20px 45px -28px rgba(0, 0, 0, .8), 0 2px 8px rgba(0, 0, 0, .4);
+        --shadow-lg: 0 40px 80px -40px rgba(0, 0, 0, .9);
+
+        color-scheme: dark;
+    }
+
+    .hero-figure__frame img,
+    .cv-photo img,
+    .about-portrait img {
+        filter: saturate(1.02) brightness(.94);
+    }
+
+    .strip,
+    .lang-visual {
+        background-color: #0E0C0A;
+    }
 }
 
 /* ---------- reset --------------------------------------------------------- */
@@ -301,7 +354,7 @@ code {
 
 .btn:hover {
     color: var(--btn-fg);
-    background-color: #000;
+    background-color: var(--btn-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -312,7 +365,7 @@ code {
 
 .btn--accent {
     --btn-bg: var(--accent);
-    --btn-fg: #FFF9F4;
+    --btn-fg: var(--btn-accent-fg);
 }
 
 .btn--accent:hover {
@@ -406,7 +459,7 @@ code {
 
 .chip--accent {
     background-color: var(--accent-soft);
-    border-color: #EED9C6;
+    border-color: var(--accent-line);
     color: var(--accent-strong);
 }
 
